@@ -30,6 +30,10 @@
             <div class="login-form">
                 <form id="loginForm">
                     <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Zadajte Email" required>
+                    </div>
+                    <div class="form-group">
                         <label for="password">Heslo</label>
                         <input type="password" id="password" name="password" placeholder="Zadajte Heslo" required>
                     </div>
@@ -50,28 +54,30 @@
 
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    
     <script src="firebase-config.js"></script>
-
     <script>
         document.getElementById('loginForm').addEventListener('submit', async function(e) {
             e.preventDefault();
-            const enteredPassword = document.getElementById('password').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
             
-            const correctPassword = await DatabaseService.getAuthPassword();
-
-            if (enteredPassword === correctPassword) {
-                localStorage.setItem('isLoggedIn', 'true');
-                window.location.href = 'pneu/storage.html';
-            } else {
-                alert('Nesprávne heslo!');
+            try {
+                await AuthService.login(email, password);
+                // onAuthStateChanged will handle the redirect
+            } catch (error) {
+                alert('Nesprávne prihlasovacie údaje: ' + error.message);
             }
         });
 
-        // Check if already logged in
-        if (localStorage.getItem('isLoggedIn') === 'true') {
-            window.location.href = 'pneu/storage.html';
-        }
+        // Observe auth state
+        AuthService.onAuthStateChanged(user => {
+            if (user) {
+                window.location.href = 'pneu/storage.html';
+            }
+        });
     </script>
 </body>
 </html>

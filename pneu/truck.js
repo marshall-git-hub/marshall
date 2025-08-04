@@ -1,8 +1,3 @@
-// Check authentication
-if (localStorage.getItem("isLoggedIn") !== "true") {
-  window.location.href = "../index.html"
-}
-
 // Global trucks array
 let trucks = []
 let allKms = {}

@@ -1,8 +1,3 @@
-// Check authentication
-if (localStorage.getItem("isLoggedIn") !== "true") {
-  window.location.href = "../index.html"
-}
-
 // Get truck ID from URL
 const urlParams = new URLSearchParams(window.location.search)
 const truckId = urlParams.get("id")

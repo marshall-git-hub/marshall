@@ -1,8 +1,3 @@
-// Check authentication
-if (localStorage.getItem("isLoggedIn") !== "true") {
-  window.location.href = "../index.html"
-}
-
 // Get trailer ID from URL
 const urlParams = new URLSearchParams(window.location.search)
 const trailerId = urlParams.get("id")

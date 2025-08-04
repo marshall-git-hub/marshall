@@ -9,9 +9,29 @@ const firebaseConfig = {
   measurementId: "G-5Z9VW7RB1F"
 };
 
-// Initialize Firebase
+
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
+const auth = firebase.auth();
+
+// Auth service
+const AuthService = {
+  login(email, password) {
+    return auth.signInWithEmailAndPassword(email, password);
+  },
+
+  logout() {
+    return auth.signOut();
+  },
+
+  onAuthStateChanged(callback) {
+    return auth.onAuthStateChanged(callback);
+  },
+
+  getCurrentUser() {
+    return auth.currentUser;
+  }
+};
 
 // Database operations
 const DatabaseService = {
@@ -317,22 +337,8 @@ const DatabaseService = {
     });
   },
 
-  async getAuthPassword() {
-    try {
-      const doc = await db.collection('settings').doc('auth').get();
-      if (doc.exists && doc.data().password) {
-        return doc.data().password;
-      }
-      // If password is not found, return null. No fallback.
-      console.error("CRITICAL: Password not configured Login will be disabled until it is set.");
-      return null;
-    } catch (error) {
-      console.error('Error getting auth password:', error);
-      // Return null in case of error to prevent login failures.
-      return null;
-    }
-  }
 };
 
 // Export for use in other files
 window.DatabaseService = DatabaseService;
+window.AuthService = AuthService;
