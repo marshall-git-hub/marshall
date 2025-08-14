@@ -1,0 +1,249 @@
+/* Vehicle Accordion Styles */
+.vehicle-accordion-item {
+    background: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.vehicle-accordion-header {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vehicle-accordion-header h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.vehicle-accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vehicle-accordion-icon {
+    color: #374151;
+}
+
+.vehicle-accordion-arrow {
+    transition: transform 0.3s;
+}
+
+.vehicle-accordion-item.active .vehicle-accordion-arrow {
+    transform: rotate(180deg);
+}
+
+.vehicle-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.vehicle-accordion-item.active .vehicle-accordion-content {
+    max-height: 1000px; /* Adjust as needed */
+}
+
+.history-container {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.history-log {
+    flex: 1;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.history-group {
+    margin-bottom: 1.5rem;
+}
+
+.history-group-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+.history-entry {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s;
+}
+
+.history-entry.highlight {
+    border-color: #3b82f6;
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.2);
+    transform: scale(1.02);
+}
+
+.history-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+.history-details {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.change-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af;
+}
+
+.tire-change-card {
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tire-change-card.removed {
+    background-color: #fee2e2;
+    border-left: 4px solid #ef4444;
+}
+
+.tire-change-card.installed {
+    background-color: #dcfce7;
+    border-left: 4px solid #22c55e;
+}
+
+.tire-change-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.tire-change-card.removed .tire-change-header {
+    color: #b91c1c;
+}
+
+.tire-change-card.installed .tire-change-header {
+    color: #166534;
+}
+
+.dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+}
+
+.dot.removed {
+    background-color: #ef4444;
+}
+
+.dot.installed {
+    background-color: #22c55e;
+}
+
+.tire-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+.info-label {
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.info-value {
+    color: #1f2937;
+    font-weight: 600;
+    text-align: right;
+}
+
+.status-badge-new.installed {
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.vehicle-layout {
+    flex-basis: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.truck-layout {
+    position: relative;
+    width: 160px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.truck-wheel {
+    position: absolute;
+    width: 55px;
+    height: 85px;
+    border: 2px solid #4b5563;
+    border-radius: 8px;
+    background: #f9fafb;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05), inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.truck-wheel:hover {
+    background: #f3f4f6;
+    transform: translateY(-2px);
+}
+
+.truck-wheel.highlight {
+    background: #dbeafe;
+    border-color: #3b82f6;
+    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.2);
+}
+
+/* Positioning the wheels */
+.truck-wheel[data-position="Predné ľavé"] { top: 0; left: 0; }
+.truck-wheel[data-position="Predné pravé"] { top: 0; right: 0; }
+
+.truck-wheel[data-position="Zadné ľavé vonkajšie"] { top: 120px; left: 0; z-index: 2; }
+.truck-wheel[data-position="Zadné ľavé vnútorné"] { top: 120px; left: 20px; z-index: 1; background: #e5e7eb; }
+
+.truck-wheel[data-position="Zadné pravé vonkajšie"] { top: 120px; right: 0; z-index: 2; }
+.truck-wheel[data-position="Zadné pravé vnútorné"] { top: 120px; right: 20px; z-index: 1; background: #e5e7eb; }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .history-container {
+        flex-direction: column;
+    }
+    .vehicle-layout {
+        margin-top: 2rem;
+    }
+}

@@ -317,44 +317,47 @@ function closeRemoveTireModal() {
 }
 
 async function finalizeTireRemoval(location) {
-  const slotIndex = truckSlots.findIndex((s) => s.id === slotToRemove)
-  const slot = truckSlots[slotIndex]
+    const slotIndex = truckSlots.findIndex((s) => s.id === slotToRemove);
+    const slot = truckSlots[slotIndex];
 
-  if (slotIndex !== -1 && slot.tire) {
-    try {
-      const tireId = slot.tire.id
-      let newStatus = "available"
-      if (location === "Predaj") {
-        newStatus = "forSale"
-      } else if (location === "Vyhodne") {
-        newStatus = "disposed"
-      }
+    if (slotIndex !== -1 && slot.tire) {
+        try {
+            const tireId = slot.tire.id;
+            let newStatus = "available";
+            if (location === "Predaj") {
+                newStatus = "forSale";
+            } else if (location === "Vyhodne") {
+                newStatus = "disposed";
+            }
 
-      if (tireId) {
-        const vehicleKm = truck.kilometers || 0
-        const tireBaseKm = slot.tire.km || 0
-        const kmOnAssign =
-          slot.tire.kmOnAssign !== undefined
-            ? slot.tire.kmOnAssign
-            : vehicleKm
-        const kmTraveled = vehicleKm - kmOnAssign
-        const newTotalKm = tireBaseKm + (kmTraveled > 0 ? kmTraveled : 0)
+            const vehicleKm = truck.kilometers || 0;
+            const tireBaseKm = slot.tire.km || 0;
+            const kmOnAssign = slot.tire.kmOnAssign !== undefined ? slot.tire.kmOnAssign : vehicleKm;
+            const kmTraveled = vehicleKm - kmOnAssign;
+            const newTotalKm = tireBaseKm + (kmTraveled > 0 ? kmTraveled : 0);
 
-        await DatabaseService.updateTire(tireId, {
-          status: newStatus,
-          km: newTotalKm,
-        })
-      }
+            // First, update the tire's status and mileage.
+            await DatabaseService.updateTire(tireId, {
+                status: newStatus,
+                km: newTotalKm,
+            });
 
-      truckSlots[slotIndex].tire = null
-      await DatabaseService.updateTireSlots("truck", truckId, truckSlots)
-      
-      closeRemoveTireModal()
-    } catch (error) {
-      console.error("Error removing tire:", error)
-      alert("Chyba pri odoberaní pneumatiky. Skúste to znova.")
+            // Create a temporary copy of the slots before modification.
+            const oldSlots = JSON.parse(JSON.stringify(truckSlots));
+
+            // Now, remove the tire from the slot.
+            truckSlots[slotIndex].tire = null;
+
+            // Finally, update the tire slots, which will also trigger the logging.
+            // The logging function will now fetch the updated tire status.
+            await DatabaseService.updateTireSlots("truck", truckId, truckSlots);
+
+            closeRemoveTireModal();
+        } catch (error) {
+            console.error("Error removing tire:", error);
+            alert("Chyba pri odoberaní pneumatiky. Skúste to znova.");
+        }
     }
-  }
 }
 
 cancelRemoveTire.addEventListener("click", closeRemoveTireModal)

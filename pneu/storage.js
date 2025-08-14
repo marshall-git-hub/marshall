@@ -57,6 +57,27 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderTires()
     updateStats()
   })
+
+  const tireSizeInput = document.getElementById('tireSize');
+  if (tireSizeInput) {
+    tireSizeInput.addEventListener('input', e => {
+        let input = e.target.value;
+        let digits = input.replace(/\D/g, '').substring(0, 8);
+        let formatted = '';
+
+        if (digits.length <= 3) {
+            formatted = digits;
+        } else if (digits.length <= 5) {
+            formatted = `${digits.substring(0, 3)}/${digits.substring(3)}`;
+        } else if (digits.length <= 7) {
+            formatted = `${digits.substring(0, 3)}/${digits.substring(3, 5)} R${digits.substring(5)}`;
+        } else {
+            formatted = `${digits.substring(0, 3)}/${digits.substring(3, 5)} R${digits.substring(5, 7)}.${digits.substring(7)}`;
+        }
+        
+        e.target.value = formatted;
+    });
+  }
   
 })
 

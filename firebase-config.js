@@ -179,8 +179,29 @@ const DatabaseService = {
 
   async updateTireSlots(vehicleType, vehicleId, slots) {
     try {
+      const oldSlots = await this.getTireSlots(vehicleType, vehicleId);
+      const vehicleKm = await this.getVehicleKm(vehicleId);
+
+      // Log changes before updating the slots
+      for (let i = 0; i < slots.length; i++) {
+          const oldTire = oldSlots.find(s => s.id === slots[i].id)?.tire || null;
+          const newTire = slots[i].tire || null;
+
+          if ((oldTire && !newTire) || (!oldTire && newTire) || (oldTire && newTire && oldTire.id !== newTire.id)) {
+              let removedTireData = oldTire;
+              if (oldTire && !newTire) {
+                  // This is a removal, find the tire's new status to log it correctly
+                  const updatedTire = await this.getTireById(oldTire.id);
+                  if (updatedTire) {
+                      removedTireData = { ...oldTire, status: updatedTire.status };
+                  }
+              }
+              await this.logTireChange(vehicleId, vehicleType, slots[i].position, removedTireData, newTire, vehicleKm);
+          }
+      }
+
       await db.collection(`${vehicleType}_slots`).doc(vehicleId).set({ slots });
-      
+
       // Update tire count for the vehicle
       const assignedCount = slots.filter(slot => slot.tire).length;
       const totalSlots = slots.length;
@@ -239,6 +260,49 @@ const DatabaseService = {
     
     // All tires are under 150,000 km (good)
     return 'good';
+  },
+
+  // Tire change history
+  async logTireChange(vehicleId, vehicleType, position, removedTire, installedTire, vehicleKm) {
+    try {
+      await db.collection('tire_history').add({
+        vehicleId,
+        vehicleType,
+        position,
+        removedTire: removedTire || null,
+        installedTire: installedTire || null,
+        date: new Date().toISOString(),
+        vehicleKm: vehicleKm || null,
+      });
+    } catch (error) {
+      console.error('Error logging tire change:', error);
+    }
+  },
+
+  async getTireById(tireId) {
+    try {
+        const doc = await db.collection('tires').doc(tireId).get();
+        if (doc.exists) {
+            return { id: doc.id, ...doc.data() };
+        }
+        return null;
+    } catch (error) {
+        console.error('Error getting tire by ID:', error);
+        return null;
+    }
+  },
+
+  async getTireChangeHistory(vehicleId) {
+    try {
+      const snapshot = await db.collection('tire_history')
+        .where('vehicleId', '==', vehicleId)
+        .orderBy('date', 'desc')
+        .get();
+      return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    } catch (error) {
+      console.error('Error getting tire change history:', error);
+      return [];
+    }
   },
 
   // Real-time listeners

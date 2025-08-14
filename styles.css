@@ -140,6 +140,12 @@ body {
   padding: 1rem;
 }
 
+@media (min-width: 1024px) {
+  .page-container {
+    max-width: 80rem;
+  }
+}
+
 /* Page Headers */
 .page-header {
   position: relative;
@@ -408,6 +414,11 @@ body {
 .tire-slots-grid {
   grid-template-columns: repeat(2, 1fr);
 }
+
+#rearTires.truck-axles {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 
 /* Cards */
 .tire-card,
@@ -962,6 +973,12 @@ body {
   padding: 0.5rem 1rem;
   max-width: 28rem;
   margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .bottom-nav {
+    max-width: 80rem;
+  }
 }
 
 .nav-item {
