@@ -218,6 +218,10 @@ body {
   background: linear-gradient(135deg, #3b82f6, #2563eb);
 }
 
+.history-icon {
+    background: linear-gradient(135deg, #a855f7, #9333ea);
+}
+
 .header-text h1 {
   font-size: 1.5rem;
   font-weight: 800;
@@ -240,6 +244,18 @@ body {
 
 .trailer-header h1 {
   background: linear-gradient(135deg, #3b82f6, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.history-header .header-background {
+  background: linear-gradient(135deg, #a855f7, #9333ea, #c084fc);
+}
+
+.history-header h1 {
+  background: linear-gradient(135deg, #a855f7, #9333ea);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -279,6 +295,30 @@ body {
 
 .stat-dot.danger {
   background-color: #ef4444;
+}
+
+.button {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px -5px rgba(16, 185, 129, 0.5);
+}
+
+.icon-button {
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .add-btn {
@@ -1022,6 +1062,11 @@ body {
   color: #3b82f6;
 }
 
+.nav-icon.history-icon {
+  background: #f3e8ff;
+  color: #a855f7;
+}
+
 .nav-icon.active {
   transform: scale(1.1);
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
@@ -1039,6 +1084,11 @@ body {
 
 .nav-icon.trailer-icon.active {
   background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+}
+
+.nav-icon.history-icon.active {
+  background: linear-gradient(135deg, #a855f7, #9333ea);
   color: white;
 }
 

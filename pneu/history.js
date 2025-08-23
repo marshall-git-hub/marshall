@@ -1,7 +1,47 @@
 document.addEventListener('DOMContentLoaded', () => {
     const vehicleListContainer = document.getElementById('vehicle-list-container');
+    const addNewBtn = document.getElementById('add-new-btn');
+    const modal = document.getElementById('add-vehicle-modal');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const addVehicleForm = document.getElementById('add-vehicle-form');
 
     let allVehicles = [];
+
+    // Modal handling
+    addNewBtn.addEventListener('click', () => {
+        modal.style.display = 'block';
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    addVehicleForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const vehicleType = document.getElementById('vehicle-type').value;
+        const licensePlate = document.getElementById('license-plate').value;
+        const km = parseInt(document.getElementById('km').value, 10);
+
+        try {
+            if (vehicleType === 'trucks') {
+                await DatabaseService.addTruck({ licensePlate, km, tires: {} });
+            } else {
+                await DatabaseService.addTrailer({ licensePlate, km, tires: {} });
+            }
+            modal.style.display = 'none';
+            addVehicleForm.reset();
+            loadVehicles(); // Reload the list
+        } catch (error) {
+            console.error('Error adding vehicle:', error);
+            alert('Chyba pri pridávaní vozidla.');
+        }
+    });
 
     // Function to load all vehicles and create the accordion
     async function loadVehicles() {
@@ -65,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="history-log">
                             <p>Načítavam históriu...</p>
                         </div>
-                        ${isTruck ? '<div class="vehicle-layout"><div class="truck-layout"></div></div>' : ''}
                     </div>
                 </div>
             `;
@@ -99,7 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to fetch and display tire change history
     async function displayHistory(item, vehicle) {
         const historyLog = item.querySelector('.history-log');
-        const truckLayout = item.querySelector('.truck-layout');
 
         try {
             const history = await DatabaseService.getTireChangeHistory(vehicle.id);
@@ -109,10 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 const groupedHistory = groupHistory(history);
                 renderHistory(historyLog, groupedHistory);
-            }
-
-            if (vehicle.type === 'truck') {
-                renderTruckLayout(truckLayout, historyLog);
             }
 
         } catch (error) {
@@ -232,47 +266,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Function to render the truck layout
-    function renderTruckLayout(truckLayout, historyLog) {
-        const wheelPositions = [
-            "Predné ľavé", "Predné pravé",
-            "Zadné ľavé vonkajšie", "Zadné ľavé vnútorné",
-            "Zadné pravé vonkajšie", "Zadné pravé vnútorné"
-        ];
-
-        truckLayout.innerHTML = '';
-        wheelPositions.forEach(position => {
-            const wheelElement = document.createElement('div');
-            wheelElement.className = 'truck-wheel';
-            wheelElement.dataset.position = position;
-            wheelElement.addEventListener('click', () => highlightHistoryByPosition(position, truckLayout, historyLog));
-            truckLayout.appendChild(wheelElement);
-        });
-    }
-
-    // Function to highlight history entries by position
-    function highlightHistoryByPosition(position, truckLayout, historyLog) {
-        const clickedWheel = truckLayout.querySelector(`.truck-wheel[data-position="${position}"]`);
-        const isAlreadyHighlighted = clickedWheel.classList.contains('highlight');
-
-        // Remove highlight from all wheels and entries
-        truckLayout.querySelectorAll('.truck-wheel').forEach(el => el.classList.remove('highlight'));
-        historyLog.querySelectorAll('.history-entry').forEach(el => el.classList.remove('highlight'));
-
-        if (!isAlreadyHighlighted) {
-            // Add highlight to the clicked wheel
-            clickedWheel.classList.add('highlight');
-
-            // Highlight corresponding entries and scroll to the first one
-            const entriesToHighlight = historyLog.querySelectorAll(`.history-entry[data-position="${position}"]`);
-            entriesToHighlight.forEach((el, index) => {
-                el.classList.add('highlight');
-                if (index === 0) {
-                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
-            });
-        }
-    }
 
     // Initial load
     loadVehicles();
