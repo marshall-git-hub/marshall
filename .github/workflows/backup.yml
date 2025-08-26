@@ -22,11 +22,12 @@ jobs:
       - name: Install dependencies
         run: npm i firebase-admin
 
-      - name: Create credentials file
-        run: echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}" > /tmp/creds.json
-
-      - name: Export env var for ADC
-        run: echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/creds.json" >> $GITHUB_ENV
+      - name: Write service account JSON
+        run: |
+          CRED_FILE="$RUNNER_TEMP/creds.json"
+          printf '%s' "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}" > "$CRED_FILE"
+          node -e "JSON.parse(require('fs').readFileSync(process.env.RUNNER_TEMP + '/creds.json','utf8')); console.log('Service account JSON OK')"
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$CRED_FILE" >> "$GITHUB_ENV"
 
       - name: Run backup
         run: node backup.js
