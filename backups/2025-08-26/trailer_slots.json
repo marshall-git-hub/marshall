@@ -1,0 +1,106 @@
+{
+  "ZC235YC": {
+    "slots": [
+      {
+        "tire": null,
+        "id": "left-front",
+        "position": "Ľavé predné"
+      },
+      {
+        "id": "left-middle",
+        "tire": null,
+        "position": "Ľavé stredné"
+      },
+      {
+        "position": "Ľavé zadné",
+        "tire": {
+          "id": "9zH41xpUSmol1yw05sFe",
+          "customId": "5HD89300I8",
+          "brand": "Giti",
+          "type": "GTR955",
+          "size": "385/55 R22.5",
+          "dot": "03/2025",
+          "km": 7000,
+          "kmOnAssign": 1427515
+        },
+        "id": "left-rear"
+      },
+      {
+        "id": "right-front",
+        "position": "Pravé predné",
+        "tire": null
+      },
+      {
+        "id": "right-middle",
+        "position": "Pravé stredné",
+        "tire": null
+      },
+      {
+        "position": "Pravé zadné",
+        "id": "right-rear",
+        "tire": {
+          "id": "IBy9vjwmW8thlllgafBc",
+          "customId": "5HB363I552",
+          "brand": "Giti",
+          "type": "GTR955",
+          "size": "385/55 R22.5",
+          "dot": "03/2025",
+          "km": 7000,
+          "kmOnAssign": 1427515
+        }
+      }
+    ]
+  },
+  "ZC460YC": {
+    "slots": [
+      {
+        "id": "left-front",
+        "position": "Ľavé predné",
+        "tire": {
+          "size": "385/55 R22.5",
+          "kmOnAssign": 1150169,
+          "customId": "C7V241623",
+          "km": 0,
+          "type": "FT524",
+          "id": "f1rmFRkxmYN52ztUJJyq",
+          "brand": "Firestone",
+          "dot": "05/2025"
+        }
+      },
+      {
+        "tire": null,
+        "id": "left-middle",
+        "position": "Ľavé stredné"
+      },
+      {
+        "id": "left-rear",
+        "position": "Ľavé zadné",
+        "tire": null
+      },
+      {
+        "position": "Pravé predné",
+        "tire": {
+          "id": "7DZzhtoqHFTS2IBqfyUx",
+          "customId": "C7V243141",
+          "brand": "Firestone",
+          "type": "FT524",
+          "size": "385/55 R22.5",
+          "dot": "05/2025",
+          "km": 0,
+          "kmOnAssign": 1150169
+        },
+        "id": "right-front"
+      },
+      {
+        "position": "Pravé stredné",
+        "id": "right-middle",
+        "tire": null
+      },
+      {
+        "id": "right-rear",
+        "tire": null,
+        "position": "Pravé zadné"
+      }
+    ]
+  }
+}

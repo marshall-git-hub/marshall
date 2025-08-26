@@ -1,0 +1,128 @@
+{
+  "ZC206YD": {
+    "licensePlate": "ZC206YD",
+    "totalTires": 6,
+    "tiresAssigned": 1,
+    "status": "danger"
+  },
+  "ZC212YC": {
+    "licensePlate": "ZC212YC",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC235YC": {
+    "licensePlate": "ZC235YC",
+    "totalTires": 6,
+    "status": "good",
+    "tiresAssigned": 2
+  },
+  "ZC237YC": {
+    "licensePlate": "ZC237YC",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC278YC": {
+    "licensePlate": "ZC278YC",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC291YD": {
+    "licensePlate": "ZC291YD",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC298YC": {
+    "licensePlate": "ZC298YC",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC336YD": {
+    "licensePlate": "ZC336YD",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC388YC": {
+    "licensePlate": "ZC388YC",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC390YC": {
+    "licensePlate": "ZC390YC",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC397YD": {
+    "licensePlate": "ZC397YD",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC398YC": {
+    "licensePlate": "ZC398YC",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC421YD": {
+    "licensePlate": "ZC421YD",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC426YD": {
+    "licensePlate": "ZC426YD",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC441YD": {
+    "licensePlate": "ZC441YD",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC451YD": {
+    "licensePlate": "ZC451YD",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC460YC": {
+    "licensePlate": "ZC460YC",
+    "totalTires": 6,
+    "status": "good",
+    "tiresAssigned": 2
+  },
+  "ZC595YB": {
+    "licensePlate": "ZC595YB",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC598YD": {
+    "licensePlate": "ZC598YD",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC603YD": {
+    "licensePlate": "ZC603YD",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC645YB": {
+    "licensePlate": "ZC645YB",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  }
+}
