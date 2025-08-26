@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tire Manager Pro</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#10b981">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10,9 9,9 8,9"/>
+                        </svg>
+                    </div>
+                    <h1>Správca Pneumatík</h1>
+                    <p></p>
+                </div>
+            </div>
+            
+            <div class="login-form">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Zadajte Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Heslo</label>
+                        <input type="password" id="password" name="password" placeholder="Zadajte Heslo" required>
+                    </div>
+                    <button type="submit" class="login-btn">
+                        <span>Prihlásiť sa</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            
+            <div class="login-footer">
+                <p>Bezpečný systém správy pneumatík flotily</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    
+    <script>
+        // Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAEV9VCbQOFA763ULbg2H9N7YPONHFo9ys",
+          authDomain: "pneu-ee1d6.firebaseapp.com",
+          projectId: "pneu-ee1d6",
+          storageBucket: "pneu-ee1d6.firebasestorage.app",
+          messagingSenderId: "703642287813",
+          appId: "1:703642287813:web:e5a25fe039e09883cb7aac",
+          measurementId: "G-5Z9VW7RB1F"
+        };
+
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        const auth = firebase.auth();
+
+        // Auth service
+        const AuthService = {
+          login(email, password) {
+            return auth.signInWithEmailAndPassword(email, password);
+          },
+
+          logout() {
+            return auth.signOut();
+          },
+
+          onAuthStateChanged(callback) {
+            return auth.onAuthStateChanged(callback);
+          },
+
+          getCurrentUser() {
+            return auth.currentUser;
+          }
+        };
+
+        // Database operations
+        const DatabaseService = {
+          // Tires
+          async getTires() {
+            try {
+              const snapshot = await db.collection('tires').get();
+              return snapshot.docs.map(doc => {
+                const data = doc.data();
+                return {
+                  id: doc.id, // Firebase document ID
+                  customId: data.customId || data.id, // Custom ID alebo fallback na staré id
+                  ...data,
+                  status: data.status || 'available', // Default to available
+                };
+              });
+            } catch (error) {
+              console.error('Error getting tires:', error);
+              return [];
+            }
+          },
+
+          async addTire(tire) {
+            try {
+              const docRef = await db.collection('tires').add(tire);
+              return { 
+                id: docRef.id, // Firebase document ID
+                customId: tire.customId, // Custom ID
+                ...tire 
+              };
+            } catch (error) {
+              console.error('Error adding tire:', error);
+              throw error;
+            }
+          },
+
+          async updateTire(tireId, updates) {
+            try {
+              await db.collection('tires').doc(tireId).update(updates);
+            } catch (error) {
+              console.error('Error updating tire:', error);
+              throw error;
+            }
+          },
+
+          async deleteTire(tireId) {
+            try {
+              await db.collection('tires').doc(tireId).delete();
+            } catch (error) {
+              console.error('Error deleting tire:', error);
+              throw error;
+            }
+          },
+
+          // Trucks
+          async getTrucks() {
+            try {
+              const snapshot = await db.collection('trucks').get();
+              return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            } catch (error) {
+              console.error('Error getting trucks:', error);
+              return [];
+            }
+          },
+
+          async addTruck(truck) {
+            try {
+              const truckId = truck.licensePlate.replace(/\s/g, '');
+              await db.collection('trucks').doc(truckId).set(truck);
+              return { id: truckId, ...truck };
+            } catch (error) {
+              console.error('Error adding truck:', error);
+              throw error;
+            }
+          },
+
+          async updateTruck(truckId, updates) {
+            try {
+              await db.collection('trucks').doc(truckId).update(updates);
+            } catch (error) {
+              console.error('Error updating truck:', error);
+              throw error;
+            }
+          },
+
+          async deleteTruck(truckId) {
+            try {
+              await db.collection('trucks').doc(truckId).delete();
+            } catch (error) {
+              console.error('Error deleting truck:', error);
+              throw error;
+            }
+          },
+
+          // Trailers
+          async getTrailers() {
+            try {
+              const snapshot = await db.collection('trailers').get();
+              return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            } catch (error) {
+              console.error('Error getting trailers:', error);
+              return [];
+            }
+          },
+
+          async addTrailer(trailer) {
+            try {
+              const trailerId = trailer.licensePlate.replace(/\s/g, '');
+              await db.collection('trailers').doc(trailerId).set(trailer);
+              return { id: trailerId, ...trailer };
+            } catch (error) {
+              console.error('Error adding trailer:', error);
+              throw error;
+            }
+          },
+
+          async updateTrailer(trailerId, updates) {
+            try {
+              await db.collection('trailers').doc(trailerId).update(updates);
+            } catch (error) {
+              console.error('Error updating trailer:', error);
+              throw error;
+            }
+          },
+
+          async deleteTrailer(trailerId) {
+            try {
+              await db.collection('trailers').doc(trailerId).delete();
+            } catch (error) {
+              console.error('Error deleting trailer:', error);
+              throw error;
+            }
+          },
+
+          // Tire slots for vehicles
+          async getTireSlots(vehicleType, vehicleId) {
+            try {
+              const snapshot = await db.collection(`${vehicleType}_slots`).doc(vehicleId).get();
+              return snapshot.exists ? snapshot.data().slots : [];
+            } catch (error) {
+              console.error('Error getting tire slots:', error);
+              return [];
+            }
+          },
+
+          async updateTireSlots(vehicleType, vehicleId, slots) {
+            try {
+              await db.collection(`${vehicleType}_slots`).doc(vehicleId).set({ slots });
+              
+              // Update tire count for the vehicle
+              const assignedCount = slots.filter(slot => slot.tire).length;
+              const totalSlots = slots.length;
+              
+              // Calculate new status based on tire kilometers
+              const newStatus = this.calculateVehicleStatus(slots);
+              
+              console.log(`Updating ${vehicleType} ${vehicleId}:`, {
+                assignedCount,
+                totalSlots,
+                newStatus,
+                slots: slots.map(slot => slot.tire ? { id: slot.tire.id, km: slot.tire.km } : null)
+              });
+              
+              if (vehicleType === 'truck') {
+                await this.updateTruck(vehicleId, { 
+                  tiresAssigned: assignedCount,
+                  totalTires: totalSlots,
+                  status: newStatus
+                });
+              } else if (vehicleType === 'trailer') {
+                await this.updateTrailer(vehicleId, { 
+                  tiresAssigned: assignedCount,
+                  totalTires: totalSlots,
+                  status: newStatus
+                });
+              }
+            } catch (error) {
+              console.error('Error updating tire slots:', error);
+              throw error;
+            }
+          },
+
+          // Calculate vehicle status based on tire kilometers
+          calculateVehicleStatus(vehicleSlots) {
+            const assignedTires = vehicleSlots.filter(slot => slot.tire && slot.tire.km !== undefined);
+            
+            if (assignedTires.length === 0) {
+              return 'good'; // No tires assigned, consider as good
+            }
+            
+            // Check if any tire has over 200,000 km (critical)
+            const hasCriticalTire = assignedTires.some(tire => (tire.tire.km || 0) >= 200000);
+            if (hasCriticalTire) {
+              return 'danger';
+            }
+            
+            // Check if any tire has between 150,000-200,000 km (warning)
+            const hasWarningTire = assignedTires.some(tire => {
+              const km = tire.tire.km || 0;
+              return km >= 150000 && km < 200000;
+            });
+            if (hasWarningTire) {
+              return 'warning';
+            }
+            
+            // All tires are under 150,000 km (good)
+            return 'good';
+          },
+
+          // Real-time listeners
+          onTiresUpdate(callback) {
+            return db.collection('tires').onSnapshot(snapshot => {
+              const tires = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+              callback(tires);
+            });
+          },
+
+          onTrucksUpdate(callback) {
+            return db.collection('trucks').onSnapshot(snapshot => {
+              const trucks = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+              callback(trucks);
+            });
+          },
+
+          onTrailersUpdate(callback) {
+            return db.collection('trailers').onSnapshot(snapshot => {
+              const trailers = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+              callback(trailers);
+            });
+          },
+
+          onTireSlotsUpdate(vehicleType, vehicleId, callback) {
+            return db.collection(`${vehicleType}_slots`).doc(vehicleId).onSnapshot(snapshot => {
+              if (snapshot.exists) {
+                const slots = snapshot.data().slots || [];
+                callback(slots);
+              } else {
+                callback([]);
+              }
+            });
+          },
+
+          // Vehicle kilometers
+          async getVehicleKm(vehicleId) {
+            try {
+              const doc = await db.collection('vehicles_km').doc(vehicleId).get();
+              if (doc.exists) {
+                return doc.data().kilometers;
+              }
+              return null;
+            } catch (error) {
+              console.error('Error getting vehicle kilometers:', error);
+              return null;
+            }
+          },
+
+          onVehicleKmUpdate(vehicleId, callback) {
+            return db.collection('vehicles_km').doc(vehicleId).onSnapshot(snapshot => {
+              if (snapshot.exists) {
+                callback(snapshot.data().kilometers);
+              } else {
+                callback(null);
+              }
+            });
+          },
+
+          // --- OPTIMIZATIONS ---
+          async getAllVehicleKms() {
+            try {
+              const snapshot = await db.collection('vehicles_km').get();
+              const kms = {};
+              snapshot.docs.forEach(doc => {
+                kms[doc.id] = doc.data().kilometers;
+              });
+              return kms;
+            } catch (error) {
+              console.error('Error getting all vehicle kilometers:', error);
+              return {};
+            }
+          },
+
+          async getAllTireSlots(vehicleType) {
+            try {
+              const snapshot = await db.collection(`${vehicleType}_slots`).get();
+              const allSlots = {};
+              snapshot.docs.forEach(doc => {
+                allSlots[doc.id] = doc.data().slots || [];
+              });
+              return allSlots;
+            } catch (error) {
+              console.error(`Error getting all ${vehicleType} tire slots:`, error);
+              return {};
+            }
+          },
+
+          onAllVehicleKmsUpdate(callback) {
+            return db.collection('vehicles_km').onSnapshot(snapshot => {
+              const kms = {};
+              snapshot.docs.forEach(doc => {
+                kms[doc.id] = doc.data().kilometers;
+              });
+              callback(kms);
+            });
+          },
+
+        };
+
+        // Export for use in other files
+        window.DatabaseService = DatabaseService;
+        window.AuthService = AuthService;
+    </script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            try {
+                await AuthService.login(email, password);
+                // onAuthStateChanged will handle the redirect
+            } catch (error) {
+                alert('Nesprávne prihlasovacie údaje: ' + error.message);
+            }
+        });
+
+        // Observe auth state
+        AuthService.onAuthStateChanged(user => {
+            if (user) {
+                window.location.href = 'pneu/storage.html';
+            }
+        });
+    </script>
+</body>
+</html>
