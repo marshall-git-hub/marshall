@@ -92,3 +92,6 @@ logs
 
 # Local configuration files
 firebase-config.js
+
+# Ensure firebase-config.js is tracked
+!firebase-config.js
