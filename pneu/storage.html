@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklad - Správca Pneumatík Pro</title>
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="theme-color" content="#10b981">
+</head>
+<body style="display: none;">
+    <div class="app-container">
+        <main class="main-content">
+            <div class="page-container">
+                <!-- Header -->
+                <div class="page-header storage-header">
+                    <div class="header-background"></div>
+                    <div class="header-content">
+                        <div class="header-info">
+                            <div class="header-icon-section">
+                                <div class="header-icon storage-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                        <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                                    </svg>
+                                </div>
+                                <div class="header-text">
+                                    <h1>Sklad Pneumatík</h1>
+                                    <p>Správa inventára</p>
+                                </div>
+                            </div>
+                            <div class="header-stats">
+                                <div class="stat-item">
+                                    <div class="stat-dot good"></div>
+                                    <span id="availableCount">0 Dostupné</span>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-dot warning"></div>
+                                    <span id="forSaleCount">0 Na predaj</span>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-dot danger"></div>
+                                    <span id="disposedCount">0 Vyhodene</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="add-btn" id="addTireBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                            Pridať pneumatiku
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Filter Section -->
+                <div class="section" id="filterSection" style="margin-bottom: 1.5rem;">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="filterSearch">Vyhľadávanie</label>
+                        <input type="text" id="filterSearch" placeholder="Hľadať podľa názvu, typu, rozmeru, ID...">
+                    </div>
+                </div>
+
+                <!-- Available Tires Section -->
+                <div class="section">
+                    <div class="section-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                        </svg>
+                        <h2>Dostupné Pneumatiky</h2>
+                    </div>
+                    <div id="availableTires" class="tire-grid"></div>
+                </div>
+
+                <!-- For Sale Tires Section -->
+                <div class="section" id="forSaleSection" style="display: none;">
+                    <div class="section-header collapsible" onclick="toggleSection('forSaleSection')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <h2>Na predaj</h2>
+                        <svg class="dropdown-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                    <div id="forSaleTires" class="tire-grid collapsible-content"></div>
+                </div>
+
+                <!-- Disposed Tires Section -->
+                <div class="section" id="disposedSection" style="display: none;">
+                    <div class="section-header collapsible" onclick="toggleSection('disposedSection')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 6h18"/>
+                            <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/>
+                            <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
+                        </svg>
+                        <h2>Vyhodene</h2>
+                        <svg class="dropdown-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                    <div id="disposedTires" class="tire-grid collapsible-content"></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="truck.html" class="nav-item">
+                <div class="nav-icon truck-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+                        <path d="M15 18H9"/>
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+                        <circle cx="17" cy="18" r="2"/>
+                        <circle cx="7" cy="18" r="2"/>
+                    </svg>
+                </div>
+                <span>Autá</span>
+            </a>
+            <a href="storage.html" class="nav-item active">
+                <div class="nav-icon storage-icon active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                </div>
+                <span>Sklad</span>
+            </a>
+            <a href="trailer.html" class="nav-item">
+                <div class="nav-icon trailer-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+                        <path d="M15 18H9"/>
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+                        <circle cx="17" cy="18" r="2"/>
+                        <circle cx="7" cy="18" r="2"/>
+                    </svg>
+                </div>
+                <span>Prívesy</span>
+            </a>
+            <a href="history.html" class="nav-item history-nav">
+                <div class="nav-icon history-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 4v6h6"/>
+                        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                    </svg>
+                </div>
+                <span>História</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Add/Edit Tire Modal -->
+    <div id="tireModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Pridať novú pneumatiku</h3>
+                <button class="close-btn" id="closeModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <form id="tireForm">
+                <div class="form-group">
+                    <label for="tireBrand">Názov značky</label>
+                    <input type="text" id="tireBrand" placeholder="Michelin" required>
+                </div>
+                <div class="form-group">
+                    <label for="tireType">Typ značky</label>
+                    <input type="text" id="tireType" placeholder="XDA2" required>
+                </div>
+                <div class="form-group">
+                    <label for="tireSize">Rozmer</label>
+                    <input type="text" id="tireSize" inputmode="numeric" pattern="[0-9/ R,.]*" placeholder="355/50 R22.5" required>
+                </div>
+                <div class="form-group">
+                    <label for="tireId">ID</label>
+                    <input type="text" id="tireId" placeholder="R2V83292" required>
+                </div>
+                <div class="form-group">
+                    <label for="tireDot">DOT (WWYY) <span id="currentDotDisplay" style="font-weight: normal; color: #6b7280; font-size: 0.8em;"></span></label>
+                    <input type="text" id="tireDot" inputmode="numeric" pattern="[0-9]{4}" placeholder="Napr. 1424">
+                </div>
+                <div class="form-group">
+                    <label for="tireKm">Najazdené km</label>
+                    <input type="number" id="tireKm" placeholder="0" min="0" value="0" required>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span id="submitText">Pridať pneumatiku</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Group Detail Modal -->
+    <div id="groupDetailModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="groupDetailTitle">Detail skupiny pneumatík</h3>
+                <button class="close-btn" id="closeGroupDetailModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="groupDetailList" style="padding: 1.5rem;"></div>
+        </div>
+    </div>
+
+    <!-- Move Tire Modal -->
+    <div id="moveTireModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="moveTireModalTitle">Presunúť pneumatiku</h3>
+                <button class="close-btn" id="closeMoveTireModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body" style="padding: 1.5rem;">
+                <p style="text-align: center; margin-bottom: 1.5rem;">Kam chcete presunúť pneumatiku <strong id="moveTireIdDisplay"></strong>?</p>
+                <div class="storage-options">
+                    <button class="storage-option-btn" data-status="available">Sklad</button>
+                    <button class="storage-option-btn" data-status="forSale">Predaj</button>
+                    <button class="storage-option-btn" data-status="disposed">Vyhodené</button>
+                </div>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <button id="cancelMoveTire" class="btn-secondary">Zrušiť</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    
+    <script src="../firebase-config.js"></script>
+        <script src="../database-service.js"></script>
+    <script>
+        auth.onAuthStateChanged(user => {
+            if (!user) {
+                window.location.href = '../index.html';
+            } else {
+                document.body.style.display = 'block';
+            }
+        });
+    </script>
+    <script src="storage.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+name: Weekly Firestore Backup
+
+on:
+  schedule:
+    - cron: "0 2 * * 1"
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm i firebase-admin
+
+      - name: Write service account JSON (supports plain or base64)
+        env:
+          JSON_PLAIN: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}
+          JSON_B64: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON_B64 }}
+        run: |
+          set -euo pipefail
+          CRED_FILE="$RUNNER_TEMP/creds.json"
+          if [ -n "${JSON_B64:-}" ]; then
+            echo "Using base64 secret"
+            echo "$JSON_B64" | base64 -d > "$CRED_FILE"
+          elif [ -n "${JSON_PLAIN:-}" ]; then
+            echo "Using plain JSON secret"
+            printf '%s' "$JSON_PLAIN" > "$CRED_FILE"
+          else
+            echo "Missing secrets: set either GOOGLE_APPLICATION_CREDENTIALS_JSON or GOOGLE_APPLICATION_CREDENTIALS_JSON_B64" >&2
+            exit 1
+          fi
+          node -e "JSON.parse(require('fs').readFileSync(process.env.RUNNER_TEMP + '/creds.json','utf8')); console.log('Service account JSON OK')"
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$CRED_FILE" >> "$GITHUB_ENV"
+
+      - name: Run backup
+        run: node backup.js
+
+      - name: Commit backup
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add backups || true
+          git commit -m "Weekly Firestore backup [skip ci]" || echo "No changes"
+          git push || true

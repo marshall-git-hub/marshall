@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História Pneu - Správca Pneumatík Pro</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="history.css">
+    <meta name="theme-color" content="#10b981">
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-content">
+            <div class="page-container">
+                <div class="page-header history-header">
+                    <div class="header-background"></div>
+                    <div class="header-content">
+                        <div class="header-info">
+                            <div class="header-icon-section">
+                                <div class="header-icon history-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 4v6h6"/>
+                        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                                    </svg>
+                                </div>
+                                <div class="header-text">
+                                    <h1>História Pneu</h1>
+                                    <p>Kompletná história výmeny pneumatík</p>
+                                </div>
+                            </div>
+                            <div class="header-actions">
+                                <button id="add-new-btn" class="button icon-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="vehicle-list-container">
+                    <!-- Vehicle accordion will be generated here -->
+                </div>
+            </div>
+        </div>
+
+        <div id="add-vehicle-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span id="close-modal-btn" class="close-button">&times;</span>
+                <h2>Pridať nové vozidlo</h2>
+                <form id="add-vehicle-form">
+                    <div class="form-group">
+                        <label for="vehicle-type">Typ vozidla:</label>
+                        <select id="vehicle-type" name="vehicle-type">
+                            <option value="trucks">Ťahač</option>
+                            <option value="trailers">Náves</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="license-plate">EČV:</label>
+                        <input type="text" id="license-plate" name="license-plate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="km">Počet KM:</label>
+                        <input type="number" id="km" name="km" required>
+                    </div>
+                    <button type="submit" class="button">Pridať</button>
+                </form>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="truck.html" class="nav-item">
+                <div class="nav-icon truck-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+                        <path d="M15 18H9"/>
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.34a1 1 0 0 0-.17-.53L19 9h-5l-2.47 3.71A1 1 0 0 0 12 13.34V18"/>
+                        <circle cx="6.5" cy="18.5" r="2.5"/>
+                        <circle cx="16.5" cy="18.5" r="2.5"/>
+                    </svg>
+                </div>
+                <span>Autá</span>
+            </a>
+            <a href="storage.html" class="nav-item">
+                <div class="nav-icon storage-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <span>Sklad</span>
+            </a>
+            <a href="trailer.html" class="nav-item">
+                <div class="nav-icon trailer-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 18H3c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2h-2"/>
+                        <path d="M5 18H3c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2h-2"/>
+                        <circle cx="7" cy="18" r="2"/>
+                        <circle cx="17" cy="18" r="2"/>
+                        <path d="M9 18h6"/>
+                    </svg>
+                </div>
+                <span>Návesy</span>
+            </a>
+            <a href="history.html" class="nav-item history-nav active">
+                <div class="nav-icon history-icon active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 4v6h6"/>
+                        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                    </svg>
+                </div>
+                <span>História</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Firebase Config and Services -->
+    <script src="../firebase-config.js"></script>
+    
+        <script src="../database-service.js"></script>
+    <!-- Page Specific Logic -->
+    <script src="history.js"></script>
+</body>
+</html>

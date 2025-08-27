@@ -1,0 +1,242 @@
+/* Vehicle Accordion Styles */
+.vehicle-accordion-item {
+    background: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.vehicle-accordion-header {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vehicle-accordion-header h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.vehicle-accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vehicle-accordion-icon {
+    color: #a855f7;
+}
+
+.vehicle-accordion-arrow {
+    transition: transform 0.3s;
+}
+
+.vehicle-accordion-item.active .vehicle-accordion-arrow {
+    transform: rotate(180deg);
+}
+
+.vehicle-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.vehicle-accordion-item.active .vehicle-accordion-content {
+    max-height: 1000px; /* Adjust as needed */
+}
+
+.history-container {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.history-log {
+    flex: 1;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.history-group {
+    margin-bottom: 1.5rem;
+}
+
+.history-group-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+.history-entry {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s;
+}
+
+.history-entry.highlight {
+    border-color: #3b82f6;
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.2);
+    transform: scale(1.02);
+}
+
+.history-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+.history-details {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.change-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af;
+}
+
+.tire-change-card {
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tire-change-card.removed {
+    background-color: #fee2e2;
+    border-left: 4px solid #ef4444;
+}
+
+.tire-change-card.installed {
+    background-color: #dcfce7;
+    border-left: 4px solid #22c55e;
+}
+
+.tire-change-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.tire-change-card.removed .tire-change-header {
+    color: #b91c1c;
+}
+
+.tire-change-card.installed .tire-change-header {
+    color: #166534;
+}
+
+.dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+}
+
+.dot.removed {
+    background-color: #ef4444;
+}
+
+.dot.installed {
+    background-color: #22c55e;
+}
+
+.tire-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+.info-label {
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.info-value {
+    color: #1f2937;
+    font-weight: 600;
+    text-align: right;
+}
+
+.status-badge-new.installed {
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 1rem;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .history-container {
+        flex-direction: column;
+    }
+}

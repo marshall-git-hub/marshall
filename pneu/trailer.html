@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prívesy - Správca Pneumatík Pro</title>
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="theme-color" content="#10b981">
+</head>
+<body style="display: none;">
+    <div class="app-container">
+        <main class="main-content">
+            <div class="page-container">
+                <!-- Header -->
+                <div class="page-header trailer-header">
+                    <div class="header-background"></div>
+                    <div class="header-content">
+                        <div class="header-info">
+                            <div class="header-icon-section">
+                                <div class="header-icon trailer-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+                                        <path d="M15 18H9"/>
+                                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+                                        <circle cx="17" cy="18" r="2"/>
+                                        <circle cx="7" cy="18" r="2"/>
+                                    </svg>
+                                </div>
+                                <div class="header-text">
+                                    <h1>Flotila prívesov</h1>
+                                    <p>Správa prívesov</p>
+                                </div>
+                            </div>
+                            <div class="header-stats">
+                                <div class="stat-item">
+                                    <div class="stat-dot good"></div>
+                                    <span id="goodCount">0 V poriadku</span>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-dot warning"></div>
+                                    <span id="warningCount">0 Pozor</span>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-dot danger"></div>
+                                    <span id="dangerCount">0 Kritické</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trailer List -->
+                <div class="vehicle-grid" id="trailerGrid"></div>
+            </div>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="truck.html" class="nav-item">
+                <div class="nav-icon truck-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+                        <path d="M15 18H9"/>
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+                        <circle cx="17" cy="18" r="2"/>
+                        <circle cx="7" cy="18" r="2"/>
+                    </svg>
+                </div>
+                <span>Autá</span>
+            </a>
+            <a href="storage.html" class="nav-item">
+                <div class="nav-icon storage-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                </div>
+                <span>Sklad</span>
+            </a>
+            <a href="trailer.html" class="nav-item active">
+                <div class="nav-icon trailer-icon active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+                        <path d="M15 18H9"/>
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+                        <circle cx="17" cy="18" r="2"/>
+                        <circle cx="7" cy="18" r="2"/>
+                    </svg>
+                </div>
+                <span>Prívesy</span>
+            </a>
+            <a href="history.html" class="nav-item history-nav">
+                <div class="nav-icon history-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 4v6h6"/>
+                        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                    </svg>
+                </div>
+                <span>História</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    
+    <script src="../firebase-config.js"></script>
+        <script src="../database-service.js"></script>
+    <script>
+        auth.onAuthStateChanged(user => {
+            if (!user) {
+                window.location.href = '../index.html';
+            } else {
+                document.body.style.display = 'block';
+            }
+        });
+    </script>
+    <script src="trailer.js"></script>
+</body>
+</html>
