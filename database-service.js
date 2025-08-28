@@ -43,26 +43,27 @@ window.DatabaseService = {
 
   // Vehicle KMs
   async getAllVehicleKms() {
-    const snapshot = await window.db.collection('vehicles_km').get();
-    // Return as object for fast lookup
-    const kms = {};
-    snapshot.docs.forEach(doc => { kms[doc.id] = doc.data().km; });
-    return kms;
+  const snapshot = await window.db.collection('vehicles_km').get();
+  // Return as object for fast lookup
+  const kms = {};
+  snapshot.docs.forEach(doc => { kms[doc.id] = doc.data().kilometers; });
+  return kms;
   },
   onAllVehicleKmsUpdate(callback) {
     window.db.collection('vehicles_km').onSnapshot(snapshot => {
       const kms = {};
-      snapshot.docs.forEach(doc => { kms[doc.id] = doc.data().km; });
+      snapshot.docs.forEach(doc => { kms[doc.id] = doc.data().kilometers; });
       callback(kms);
     });
   },
   async getVehicleKm(vehicleId) {
-    const doc = await window.db.collection('vehicles_km').doc(vehicleId).get();
-    return doc.exists ? doc.data().km : null;
+  const doc = await window.db.collection('vehicles_km').doc(vehicleId).get();
+  return doc.exists ? doc.data().kilometers : null;
   },
   onVehicleKmUpdate(vehicleId, callback) {
     window.db.collection('vehicles_km').doc(vehicleId).onSnapshot(doc => {
-      callback(doc.data());
+      const data = doc.data();
+      callback(data ? data.kilometers : null);
     });
   },
 

@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addVehicleForm = document.getElementById('add-vehicle-form');
 
     let allVehicles = [];
+    let filteredVehicles = [];
 
     // Modal handling
     addNewBtn.addEventListener('click', () => {
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ];
 
             allVehicles.sort((a, b) => a.licensePlate.localeCompare(b.licensePlate));
-
+            filteredVehicles = [...allVehicles];
             renderVehicleAccordion();
 
         } catch (error) {
@@ -67,27 +68,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to render the vehicle accordion
     function renderVehicleAccordion() {
         vehicleListContainer.innerHTML = '';
-
-        allVehicles.forEach(vehicle => {
+        const icon = `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+            <path d="M15 18H9"/>
+            <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+            <circle cx="17" cy="18" r="2"/>
+            <circle cx="7" cy="18" r="2"/>
+        </svg>`;
+        filteredVehicles.forEach(vehicle => {
             const item = document.createElement('div');
             item.className = 'vehicle-accordion-item';
-            const isTruck = vehicle.type === 'truck';
-            const icon = isTruck 
-                ? `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
-                        <path d="M15 18H9"/>
-                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.34a1 1 0 0 0-.17-.53L19 9h-5l-2.47 3.71A1 1 0 0 0 12 13.34V18"/>
-                        <circle cx="6.5" cy="18.5" r="2.5"/>
-                        <circle cx="16.5" cy="18.5" r="2.5"/>
-                    </svg>`
-                : `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 18H3c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2h-2"/>
-                        <path d="M5 18H3c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2h-2"/>
-                        <circle cx="7" cy="18" r="2"/>
-                        <circle cx="17" cy="18" r="2"/>
-                        <path d="M9 18h6"/>
-                    </svg>`;
-
             item.innerHTML = `
                 <div class="vehicle-accordion-header">
                     <div class="vehicle-accordion-title">
@@ -109,10 +99,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             vehicleListContainer.appendChild(item);
-
             const header = item.querySelector('.vehicle-accordion-header');
             header.addEventListener('click', () => toggleAccordionItem(item, vehicle));
         });
+    // Search functionality
+    document.addEventListener('input', function(e) {
+        if (e.target && e.target.id === 'search-license-plate') {
+            const value = e.target.value.trim().toLowerCase();
+            filteredVehicles = allVehicles.filter(v => v.licensePlate.toLowerCase().includes(value));
+            renderVehicleAccordion();
+        }
+    });
     }
 
     // Function to handle accordion expansion/collapse
