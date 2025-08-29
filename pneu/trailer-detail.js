@@ -289,7 +289,17 @@ async function assignTire(slotId, tireId) {
 
       // 2. Update the tire's main status to 'assigned'
       await DatabaseService.updateTire(tireId, { status: "assigned" });
-
+      // Log assignment to tire_history
+      await DatabaseService.logTireHistory({
+        vehicleId: trailerId,
+        position: trailerSlots[slotIndex].position,
+        installedTire: {
+          ...tireForSlot,
+          status: "assigned"
+        },
+        removedTire: null,
+        vehicleKm: kmAtAssignment
+      });
       // 3. Save the updated slots array to the database
       await DatabaseService.updateTireSlots('trailer', trailerId, trailerSlots);
 
@@ -313,47 +323,55 @@ function closeRemoveTireModal() {
 }
 
 async function finalizeTireRemoval(location) {
-    const slotIndex = trailerSlots.findIndex((s) => s.id === slotToRemove);
-    const slot = trailerSlots[slotIndex];
+  const slotIndex = trailerSlots.findIndex((s) => s.id === slotToRemove);
+  const slot = trailerSlots[slotIndex];
 
-    if (slotIndex !== -1 && slot.tire) {
-        try {
-            const tireId = slot.tire.id;
-            let newStatus = "available";
-            if (location === "Predaj") {
-                newStatus = "forSale";
-            } else if (location === "Vyhodne") {
-                newStatus = "disposed";
-            }
+  if (slotIndex !== -1 && slot.tire) {
+    try {
+      const tireId = slot.tire.id;
+      let newStatus = "available";
+      let stav = "sklad";
+      if (location === "Predaj") {
+        newStatus = "forSale";
+        stav = "predaj";
+      } else if (location === "Vyhodne") {
+        newStatus = "disposed";
+        stav = "vyhodene";
+      }
 
-            const vehicleKm = trailer.kilometers || 0;
-            const tireBaseKm = slot.tire.km || 0;
-            const kmOnAssign = slot.tire.kmOnAssign !== undefined ? slot.tire.kmOnAssign : vehicleKm;
-            const kmTraveled = vehicleKm - kmOnAssign;
-            const newTotalKm = tireBaseKm + (kmTraveled > 0 ? kmTraveled : 0);
+      const vehicleKm = trailer.kilometers || 0;
+      const tireBaseKm = slot.tire.km || 0;
+      const kmOnAssign = slot.tire.kmOnAssign !== undefined ? slot.tire.kmOnAssign : vehicleKm;
+      const kmTraveled = vehicleKm - kmOnAssign;
+      const newTotalKm = tireBaseKm + (kmTraveled > 0 ? kmTraveled : 0);
 
-            // First, update the tire's status and mileage.
-            await DatabaseService.updateTire(tireId, {
-                status: newStatus,
-                km: newTotalKm,
-            });
+      // First, update the tire's status and mileage.
+      await DatabaseService.updateTire(tireId, {
+        status: newStatus,
+        km: newTotalKm,
+      });
 
-            // Create a temporary copy of the slots before modification.
-            const oldSlots = JSON.parse(JSON.stringify(trailerSlots));
+      // Log to tire_history with stav
+      await DatabaseService.logTireHistory({
+        vehicleId: trailerId,
+        position: slot.id,
+        removedTire: { ...slot.tire, status: stav, km: newTotalKm },
+        installedTire: null,
+        vehicleKm
+      });
 
-            // Now, remove the tire from the slot.
-            trailerSlots[slotIndex].tire = null;
+      // Now, remove the tire from the slot.
+      trailerSlots[slotIndex].tire = null;
 
-            // Finally, update the tire slots, which will also trigger the logging.
-            // The logging function will now fetch the updated tire status.
-            await DatabaseService.updateTireSlots("trailer", trailerId, trailerSlots);
+      // Update the tire slots
+      await DatabaseService.updateTireSlots("trailer", trailerId, trailerSlots);
 
-            closeRemoveTireModal();
-        } catch (error) {
-            console.error("Error removing tire:", error);
-            alert("Chyba pri odoberaní pneumatiky. Skúste to znova.");
-        }
+      closeRemoveTireModal();
+    } catch (error) {
+      console.error("Error removing tire:", error);
+      alert("Chyba pri odoberaní pneumatiky. Skúste to znova.");
     }
+  }
 }
 
 cancelRemoveTire.addEventListener("click", closeRemoveTireModal)

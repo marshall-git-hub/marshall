@@ -88,6 +88,17 @@ window.DatabaseService = {
     await window.db.collection(type + '_slots').doc(id).set({ slots });
   },
 
+    async logTireHistory({ vehicleId, position, removedTire, installedTire, vehicleKm }) {
+      await window.db.collection('tire_history').add({
+        vehicleId,
+        position,
+        removedTire,
+        installedTire,
+        vehicleKm,
+        date: new Date().toISOString()
+      });
+    },
+
   // Add methods for history page as needed
   async getTireChangeHistory(vehicleId) {
     const snapshot = await window.db.collection('tire_history').where('vehicleId', '==', vehicleId).get();

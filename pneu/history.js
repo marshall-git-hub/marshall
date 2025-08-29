@@ -154,37 +154,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to group history entries
     function groupHistory(history) {
-        const groupedByKmAndDate = {};
-
+        const groupedByKmAndPosition = {};
         history.forEach(entry => {
-            const key = `${entry.vehicleKm}-${entry.date.substring(0, 10)}`;
-            if (!groupedByKmAndDate[key]) {
-                groupedByKmAndDate[key] = {
+            const datePart = entry.date ? entry.date.substring(0, 10) : '';
+            // Normalize position to Slovak for grouping
+            const normalizedPosition = translatePosition(entry.position);
+            const key = `${entry.vehicleKm}-${normalizedPosition}-${datePart}`;
+            if (!groupedByKmAndPosition[key]) {
+                groupedByKmAndPosition[key] = {
                     date: entry.date,
                     vehicleKm: entry.vehicleKm,
-                    changes: {}
+                    position: normalizedPosition,
+                    removedTire: null,
+                    installedTire: null
                 };
             }
-
-            if (!groupedByKmAndDate[key].changes[entry.position]) {
-                groupedByKmAndDate[key].changes[entry.position] = {};
+            if (entry.removedTire && !groupedByKmAndPosition[key].removedTire) {
+                groupedByKmAndPosition[key].removedTire = entry.removedTire;
             }
-
-            if (entry.removedTire) {
-                groupedByKmAndDate[key].changes[entry.position].removed = entry.removedTire;
-            }
-            if (entry.installedTire) {
-                groupedByKmAndDate[key].changes[entry.position].installed = entry.installedTire;
+            if (entry.installedTire && !groupedByKmAndPosition[key].installedTire) {
+                groupedByKmAndPosition[key].installedTire = entry.installedTire;
             }
         });
-
-        return Object.values(groupedByKmAndDate);
+        return Object.values(groupedByKmAndPosition);
     }
 
     // Function to render the history log
     function renderHistory(historyLog, groupedHistory) {
-        historyLog.innerHTML = ''; 
-
+        historyLog.innerHTML = '';
         groupedHistory.forEach(group => {
             const groupElement = document.createElement('div');
             groupElement.className = 'history-group';
@@ -203,27 +200,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     </svg>
                     <span>${group.vehicleKm ? group.vehicleKm.toLocaleString('sk-SK') + ' km' : ''}</span>
                 </div>
-            `;
-
-            for (const position in group.changes) {
-                const change = group.changes[position];
-                const entryElement = document.createElement('div');
-                entryElement.className = 'history-entry';
-                entryElement.dataset.position = position;
-
-                const removedTire = change.removed || {};
-                const installedTire = change.installed || {};
-
-                const removedKm = (removedTire.km !== undefined && removedTire.km !== null) ? removedTire.km.toLocaleString('sk-SK') : 'N/A';
-                const installedKm = (installedTire.km !== undefined && installedTire.km !== null) ? installedTire.km.toLocaleString('sk-SK') : 'N/A';
-
-                entryElement.innerHTML = `
+                <div class="history-entry" data-position="${group.position}">
                     <div class="history-header">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="10" r="3"></circle>
                             <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"></path>
                         </svg>
-                        <h3>Pozícia: ${position}</h3>
+                        <h3>Pozícia: ${translatePosition(group.position)}</h3>
                     </div>
                     <div class="history-details">
                         <div class="tire-change-card removed">
@@ -232,10 +215,10 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <span>Odobratá</span>
                             </div>
                             <div class="tire-info">
-                                <div class="info-row"><span class="info-label">ID:</span><span class="info-value">${removedTire.customId || 'N/A'}</span></div>
-                                <div class="info-row"><span class="info-label">Typ:</span><span class="info-value">${removedTire.brand || ''} ${removedTire.type || ''}</span></div>
-                                <div class="info-row"><span class="info-label">KM:</span><span class="info-value">${removedKm}</span></div>
-                                <div class="info-row"><span class="info-label">Stav:</span><span class="info-value">${removedTire.status || 'N/A'}</span></div>
+                                <div class="info-row"><span class="info-label">ID:</span><span class="info-value">${group.removedTire?.customId || 'N/A'}</span></div>
+                                <div class="info-row"><span class="info-label">Typ:</span><span class="info-value">${group.removedTire?.brand || ''} ${group.removedTire?.type || ''}</span></div>
+                                <div class="info-row"><span class="info-label">KM:</span><span class="info-value">${group.removedTire?.km !== undefined && group.removedTire?.km !== null ? group.removedTire.km.toLocaleString('sk-SK') : 'N/A'}</span></div>
+                                <div class="info-row"><span class="info-label">Stav:</span><span class="info-value">${group.removedTire?.status || 'N/A'}</span></div>
                             </div>
                         </div>
                         <div class="change-arrow">
@@ -250,19 +233,36 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <span>Nainštalovaná</span>
                             </div>
                             <div class="tire-info">
-                                <div class="info-row"><span class="info-label">ID:</span><span class="info-value">${installedTire.customId || 'N/A'}</span></div>
-                                <div class="info-row"><span class="info-label">Typ:</span><span class="info-value">${installedTire.brand || ''} ${installedTire.type || ''}</span></div>
-                                <div class="info-row"><span class="info-label">KM:</span><span class="info-value">${installedKm}</span></div>
+                                <div class="info-row"><span class="info-label">ID:</span><span class="info-value">${group.installedTire?.customId || 'N/A'}</span></div>
+                                <div class="info-row"><span class="info-label">Typ:</span><span class="info-value">${group.installedTire?.brand || ''} ${group.installedTire?.type || ''}</span></div>
+                                <div class="info-row"><span class="info-label">KM:</span><span class="info-value">${group.installedTire?.km !== undefined && group.installedTire?.km !== null ? group.installedTire.km.toLocaleString('sk-SK') : 'N/A'}</span></div>
                             </div>
                         </div>
                     </div>
-                `;
-                groupElement.appendChild(entryElement);
-            }
+                </div>
+            `;
             historyLog.appendChild(groupElement);
         });
     }
 
+
+    function translatePosition(position) {
+      const translations = {
+        "front-left": "Predné ľavé",
+        "front-right": "Predné pravé",
+        "rear-left-outer": "Zadné ľavé vonkajšie",
+        "rear-left-inner": "Zadné ľavé vnútorné",
+        "rear-right-outer": "Zadné pravé vonkajšie",
+        "rear-right-inner": "Zadné pravé vnútorné",
+        "left-front": "Ľavé predné",
+        "left-middle": "Ľavé stredné",
+        "left-rear": "Ľavé zadné",
+        "right-front": "Pravé predné",
+        "right-middle": "Pravé stredné",
+        "right-rear": "Pravé zadné"
+      };
+      return translations[position] || position;
+    }
 
     // Initial load
     loadVehicles();
