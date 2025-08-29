@@ -81,7 +81,8 @@ window.DatabaseService = {
   },
   onTireSlotsUpdate(type, id, callback) {
     window.db.collection(type + '_slots').doc(id).onSnapshot(doc => {
-      callback(doc.data());
+      const data = doc.data();
+      callback(data ? data.slots : []);
     });
   },
   async updateTireSlots(type, id, slots) {

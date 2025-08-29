@@ -84,16 +84,15 @@
 .history-entry {
     background: white;
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 2.5rem;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
     border: 1px solid #e5e7eb;
     transition: all 0.3s;
     margin-bottom: 2rem;
-    width: 90%;
-    max-width: 900px;
+    width: 98%;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 24px 0;
     box-sizing: border-box;
 
 .history-entry.highlight {
@@ -117,7 +116,9 @@
 .history-details {
     display: flex;
     align-items: stretch;
-    gap: 1rem;
+    gap: 2.5rem;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .change-arrow {
@@ -129,9 +130,11 @@
 
 .tire-change-card {
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     position: relative;
-    flex: 1;
+    flex: 2;
+    min-width: 220px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
 }

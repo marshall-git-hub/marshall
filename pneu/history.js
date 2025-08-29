@@ -154,29 +154,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to group history entries
     function groupHistory(history) {
-        const groupedByKmAndPosition = {};
+        // Group by date and km, then collect all positions for that group
+        const grouped = {};
         history.forEach(entry => {
             const datePart = entry.date ? entry.date.substring(0, 10) : '';
-            // Normalize position to Slovak for grouping
-            const normalizedPosition = translatePosition(entry.position);
-            const key = `${entry.vehicleKm}-${normalizedPosition}-${datePart}`;
-            if (!groupedByKmAndPosition[key]) {
-                groupedByKmAndPosition[key] = {
+            const key = `${datePart}-${entry.vehicleKm}`;
+            if (!grouped[key]) {
+                grouped[key] = {
                     date: entry.date,
                     vehicleKm: entry.vehicleKm,
-                    position: normalizedPosition,
-                    removedTire: null,
-                    installedTire: null
+                    positions: []
                 };
             }
-            if (entry.removedTire && !groupedByKmAndPosition[key].removedTire) {
-                groupedByKmAndPosition[key].removedTire = entry.removedTire;
-            }
-            if (entry.installedTire && !groupedByKmAndPosition[key].installedTire) {
-                groupedByKmAndPosition[key].installedTire = entry.installedTire;
-            }
+            grouped[key].positions.push({
+                position: translatePosition(entry.position),
+                removedTire: entry.removedTire,
+                installedTire: entry.installedTire
+            });
         });
-        return Object.values(groupedByKmAndPosition);
+        // Sort positions for each group for consistent display
+        return Object.values(grouped).sort((a, b) => new Date(b.date) - new Date(a.date));
     }
 
     // Function to render the history log
@@ -200,45 +197,49 @@ document.addEventListener('DOMContentLoaded', () => {
                     </svg>
                     <span>${group.vehicleKm ? group.vehicleKm.toLocaleString('sk-SK') + ' km' : ''}</span>
                 </div>
-                <div class="history-entry" data-position="${group.position}">
-                    <div class="history-header">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="10" r="3"></circle>
-                            <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"></path>
-                        </svg>
-                        <h3>Pozícia: ${translatePosition(group.position)}</h3>
-                    </div>
-                    <div class="history-details">
-                        <div class="tire-change-card removed">
-                            <div class="tire-change-header">
-                                <span class="dot removed"></span>
-                                <span>Odobratá</span>
+                <div class="history-entries">
+                    ${group.positions.map(pos => `
+                        <div class="history-entry" data-position="${pos.position}">
+                            <div class="history-header">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"></path>
+                                </svg>
+                                <h3>Pozícia: ${pos.position}</h3>
                             </div>
-                            <div class="tire-info">
-                                <div class="info-row"><span class="info-label">ID:</span><span class="info-value">${group.removedTire?.customId || 'N/A'}</span></div>
-                                <div class="info-row"><span class="info-label">Typ:</span><span class="info-value">${group.removedTire?.brand || ''} ${group.removedTire?.type || ''}</span></div>
-                                <div class="info-row"><span class="info-label">KM:</span><span class="info-value">${group.removedTire?.km !== undefined && group.removedTire?.km !== null ? group.removedTire.km.toLocaleString('sk-SK') : 'N/A'}</span></div>
-                                <div class="info-row"><span class="info-label">Stav:</span><span class="info-value">${group.removedTire?.status || 'N/A'}</span></div>
+                            <div class="history-details">
+                                <div class="tire-change-card removed">
+                                    <div class="tire-change-header">
+                                        <span class="dot removed"></span>
+                                        <span>Odobratá</span>
+                                    </div>
+                                    <div class="tire-info">
+                                        <div class="info-row"><span class="info-label">ID:</span><span class="info-value">${pos.removedTire?.customId || 'N/A'}</span></div>
+                                        <div class="info-row"><span class="info-label">Typ:</span><span class="info-value">${(!pos.removedTire?.brand && !pos.removedTire?.type) ? 'N/A' : `${pos.removedTire?.brand || ''} ${pos.removedTire?.type || ''}`}</span></div>
+                                        <div class="info-row"><span class="info-label">KM:</span><span class="info-value">${pos.removedTire?.km !== undefined && pos.removedTire?.km !== null ? pos.removedTire.km.toLocaleString('sk-SK') : 'N/A'}</span></div>
+                                        <div class="info-row"><span class="info-label">Stav:</span><span class="info-value">${pos.removedTire?.status || 'N/A'}</span></div>
+                                    </div>
+                                </div>
+                                <div class="change-arrow">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="tire-change-card installed">
+                                    <div class="tire-change-header">
+                                        <span class="dot installed"></span>
+                                        <span>Nainštalovaná</span>
+                                    </div>
+                                    <div class="tire-info">
+                                        <div class="info-row"><span class="info-label">ID:</span><span class="info-value">${pos.installedTire?.customId || 'N/A'}</span></div>
+                                        <div class="info-row"><span class="info-label">Typ:</span><span class="info-value">${pos.installedTire?.brand || ''} ${pos.installedTire?.type || ''}</span></div>
+                                        <div class="info-row"><span class="info-label">KM:</span><span class="info-value">${pos.installedTire?.km !== undefined && pos.installedTire?.km !== null ? pos.installedTire.km.toLocaleString('sk-SK') : 'N/A'}</span></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="change-arrow">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </div>
-                        <div class="tire-change-card installed">
-                            <div class="tire-change-header">
-                                <span class="dot installed"></span>
-                                <span>Nainštalovaná</span>
-                            </div>
-                            <div class="tire-info">
-                                <div class="info-row"><span class="info-label">ID:</span><span class="info-value">${group.installedTire?.customId || 'N/A'}</span></div>
-                                <div class="info-row"><span class="info-label">Typ:</span><span class="info-value">${group.installedTire?.brand || ''} ${group.installedTire?.type || ''}</span></div>
-                                <div class="info-row"><span class="info-label">KM:</span><span class="info-value">${group.installedTire?.km !== undefined && group.installedTire?.km !== null ? group.installedTire.km.toLocaleString('sk-SK') : 'N/A'}</span></div>
-                            </div>
-                        </div>
-                    </div>
+                    `).join('')}
                 </div>
             `;
             historyLog.appendChild(groupElement);

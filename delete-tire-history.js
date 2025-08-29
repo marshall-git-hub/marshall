@@ -19,3 +19,4 @@ async function deleteTireHistory(vehicleId) {
 }
 
 deleteTireHistory('AA732GJ');
+deleteTireHistory('ZC206YD');
