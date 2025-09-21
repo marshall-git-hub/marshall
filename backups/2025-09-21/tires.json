@@ -1,0 +1,344 @@
+{
+  "0xaHRSTvxH0BVOty6A3y": {
+    "customId": "6159040829",
+    "brand": "Continental",
+    "type": "HS3",
+    "size": "315/60 R22.5",
+    "dot": "03/2025",
+    "km": 36358,
+    "status": "assigned"
+  },
+  "4DfM3XAlz4M5yrBM1axx": {
+    "customId": "RDD11511R",
+    "brand": "Bf Goodreech",
+    "type": "Route Control",
+    "size": "385/55 R22.5",
+    "dot": "08/2025",
+    "km": 0,
+    "status": "assigned"
+  },
+  "54cVmoV2iwKH8u0ZEo5l": {
+    "customId": "RLD96852R",
+    "brand": "Bf Goodreech",
+    "type": "Route Control",
+    "size": "315/60 R22.5",
+    "dot": "08/2025",
+    "km": 0,
+    "status": "assigned"
+  },
+  "7DZzhtoqHFTS2IBqfyUx": {
+    "customId": "C7V243141",
+    "brand": "Firestone",
+    "type": "FT524",
+    "size": "385/55 R22.5",
+    "dot": "05/2025",
+    "km": 0,
+    "status": "assigned"
+  },
+  "7Rd8aBeZtAQRCJdyxzxD": {
+    "customId": "1688845995",
+    "brand": "Hankook",
+    "type": "TH31",
+    "size": "435/50 R19.5",
+    "dot": "02/2026",
+    "km": 0,
+    "status": "assigned"
+  },
+  "81bsnPue0nl76s4aWDAO": {
+    "customId": "HLD80707R",
+    "brand": "Bf Goodreech",
+    "type": "Route Control",
+    "size": "295/60 R22.5",
+    "dot": "03/2025",
+    "km": 0,
+    "status": "assigned"
+  },
+  "85EDDNFlxTJlLPIZqeqm": {
+    "customId": "6158783788",
+    "brand": "Continetal",
+    "type": "HS3",
+    "size": "295/60 R22.5",
+    "dot": "04/2025",
+    "km": 22078,
+    "status": "assigned"
+  },
+  "8fPwxV0Lq9hy6bRfXzzj": {
+    "customId": "M2R360839",
+    "brand": "Brigestone",
+    "type": "R166 II",
+    "size": "435/50 R19.5",
+    "dot": "03/2022",
+    "km": 0,
+    "status": "assigned"
+  },
+  "9zH41xpUSmol1yw05sFe": {
+    "customId": "5HD89300I8",
+    "brand": "Giti",
+    "type": "GTR955",
+    "size": "385/55 R22.5",
+    "dot": "03/2025",
+    "km": 7000,
+    "status": "assigned"
+  },
+  "AVP6Y3tfRxUhk0Xs5cB4": {
+    "customId": "HLD80685R",
+    "brand": "Bf Goodreech",
+    "type": "Route Control",
+    "size": "295/60 R22.5",
+    "dot": "03/2025",
+    "km": 0,
+    "status": "assigned"
+  },
+  "BWar9gRFoDO1e3c9bRWT": {
+    "customId": "M1B407613",
+    "brand": "Brigestone",
+    "type": "R166 II",
+    "size": "435/50 R19.5",
+    "dot": "06/2025",
+    "km": 0,
+    "status": "assigned"
+  },
+  "HakZjSmtwftpRRSxRfQW": {
+    "customId": "JLA34602",
+    "brand": "Pirelli ",
+    "type": "R02 Proway",
+    "size": "315/60 R22.5",
+    "km": 0,
+    "dot": "06/2024",
+    "status": "assigned"
+  },
+  "IBy9vjwmW8thlllgafBc": {
+    "customId": "5HB363I552",
+    "brand": "Giti",
+    "type": "GTR955",
+    "size": "385/55 R22.5",
+    "dot": "03/2025",
+    "km": 7000,
+    "status": "assigned"
+  },
+  "JFufFeD1wsAt0Vw6QuEg": {
+    "customId": "6158822373",
+    "brand": "Continetal",
+    "type": "HS3",
+    "size": "295/60 R22.5",
+    "dot": "04/2025",
+    "km": 22078,
+    "status": "assigned"
+  },
+  "JGiHOZlwfFIpXmxr3nnz": {
+    "customId": "6159133677",
+    "brand": "Continetal",
+    "type": "HS3",
+    "size": "315/60 R22.5",
+    "dot": "04/2025",
+    "km": 31303,
+    "status": "assigned"
+  },
+  "KkZa9g4UWyk3mz05H096": {
+    "customId": "KDD06870R",
+    "brand": "Bf Goodreech",
+    "type": "Route Control",
+    "size": "385/55 R22.5",
+    "dot": "08/2025",
+    "km": 0,
+    "status": "assigned"
+  },
+  "LID4IB4xz6mkOhuJQ5oD": {
+    "customId": "6159041110",
+    "brand": "Continental",
+    "type": "HS3",
+    "size": "315/60 R22.5",
+    "dot": "04/2025",
+    "km": 36358,
+    "status": "assigned"
+  },
+  "NZYWPKUpejodx6t2V18w": {
+    "customId": "KDD16719R",
+    "brand": "Bf Goodreech",
+    "type": "Route Control",
+    "size": "385/55 R22.5",
+    "dot": "07/2025",
+    "km": 0,
+    "status": "assigned"
+  },
+  "P3pRZaNjoovzyOhzBXex": {
+    "customId": "RLD96778R",
+    "type": "Route Control",
+    "size": "315/60 R22.5",
+    "dot": "08/2025",
+    "km": 0,
+    "status": "available",
+    "brand": "BFGoodreech"
+  },
+  "RPjsQNyQbrFxDbrQskbW": {
+    "customId": "M1B406740",
+    "brand": "Brigestone",
+    "type": "R166 II",
+    "size": "435/50 R19.5",
+    "dot": "06/2025",
+    "km": 0,
+    "status": "assigned"
+  },
+  "SIkzVKAlmycz2DxaOUD0": {
+    "customId": "KUD04146",
+    "brand": "Hankook",
+    "type": "AH31",
+    "dot": "08/2020",
+    "km": 20000,
+    "size": "355/50 R22.5",
+    "status": "assigned"
+  },
+  "W8bswEhs9NTsFTxvm9UO": {
+    "customId": "61588944794",
+    "brand": "Continental",
+    "type": "TH3",
+    "size": "435/50 R19.5",
+    "dot": "03/2025",
+    "km": 0,
+    "status": "available"
+  },
+  "XchUJj1ngM80gn0jWlTe": {
+    "customId": "HLD80636R",
+    "type": "Route Control",
+    "size": "295/60 R22.5",
+    "dot": "03/2025",
+    "km": 0,
+    "status": "available",
+    "brand": "BFGoodreech"
+  },
+  "YWH0cO0CSv3TJivaHq8H": {
+    "customId": "6159132114",
+    "brand": "Continetal",
+    "type": "HS3",
+    "size": "315/60 R22.5",
+    "dot": "04/2025",
+    "km": 22078,
+    "status": "assigned"
+  },
+  "ZWTo0lHNiQ7qbL9b5fJZ": {
+    "customId": "KUE02145",
+    "brand": "Hankook",
+    "type": "AH31",
+    "dot": "08/2020",
+    "km": 20000,
+    "size": "355/50 R22.5",
+    "status": "assigned"
+  },
+  "ZyyZtz3RoDavSOaHxJ6Q": {
+    "customId": "KDD06928R",
+    "type": "Route Control",
+    "size": "385/55 R22.5",
+    "dot": "08/2025",
+    "km": 0,
+    "status": "available",
+    "brand": "BFGoodreech"
+  },
+  "aLbcSKzrCe5oTak3b3az": {
+    "customId": "615882944",
+    "brand": "Continetal",
+    "type": "HS3",
+    "size": "295/60 R22.5",
+    "dot": "04/2025",
+    "km": 22078,
+    "status": "assigned"
+  },
+  "aQYhGRGmkNHFgfn7921z": {
+    "customId": "KDD16718R",
+    "type": "Route Control",
+    "size": "385/55 R22.5",
+    "dot": "07/2025",
+    "km": 0,
+    "status": "available",
+    "brand": "BFGoodreech"
+  },
+  "bnOCTIu59vqeMD8ebOSj": {
+    "customId": "6158065362",
+    "type": "TH3",
+    "size": "435/50 R19.5",
+    "dot": "10/2024",
+    "km": 0,
+    "brand": "Continental",
+    "status": "available"
+  },
+  "brQ36Ytp3bilIXkg2UB5": {
+    "customId": "KDD16693R",
+    "type": "Route Control",
+    "size": "385/55 R22.5",
+    "dot": "07/2025",
+    "km": 0,
+    "status": "available",
+    "brand": "BFGoodreech"
+  },
+  "cJTpf1N8Kah0xHV0eA9G": {
+    "customId": "8991990581",
+    "brand": "Hankook",
+    "type": "TH35",
+    "size": "315/60 R22.5",
+    "dot": "04/2024",
+    "km": 0,
+    "status": "available"
+  },
+  "ca2OCdkoGiE0suBaXxiq": {
+    "customId": "6158821956",
+    "brand": "Continetal",
+    "type": "HS3",
+    "size": "295/60 R22.5",
+    "dot": "04/2025",
+    "km": 22078,
+    "status": "assigned"
+  },
+  "f1rmFRkxmYN52ztUJJyq": {
+    "customId": "C7V241623",
+    "brand": "Firestone",
+    "type": "FT524",
+    "size": "385/55 R22.5",
+    "dot": "05/2025",
+    "km": 0,
+    "status": "assigned"
+  },
+  "hmP4ngZ7YCc8WE6QZPUG": {
+    "customId": "180593506",
+    "brand": "Hankook",
+    "type": "TH31",
+    "size": "435/50 R19.5",
+    "status": "available",
+    "dot": "07/2021",
+    "km": 0
+  },
+  "oYbtzCngQb7bs2PfcSXa": {
+    "customId": "M2Y283483",
+    "brand": "Brigestone",
+    "type": "R166 II",
+    "size": "435/50 R19.5",
+    "status": "available",
+    "dot": "04/2022",
+    "km": 0
+  },
+  "pxU0FXw7XVVPgYIBTW0U": {
+    "customId": "HLD80681R",
+    "type": "Route Control",
+    "size": "295/60 R22.5",
+    "status": "available",
+    "dot": "03/2025",
+    "km": 0,
+    "brand": "BFGoodreech"
+  },
+  "wfNFw56y6FCZCgzy8jon": {
+    "customId": "8991990574",
+    "brand": "Hankook",
+    "type": "TH35",
+    "size": "315/60 R22.5",
+    "status": "available",
+    "dot": "04/2024",
+    "km": 0
+  },
+  "xxPVH7XIiFfsrD5o9Zki": {
+    "customId": "M1U500222",
+    "brand": "Brigestone",
+    "type": "R166 II",
+    "size": "435/50 R19.5",
+    "status": "available",
+    "dot": "09/2021",
+    "km": 0
+  }
+}

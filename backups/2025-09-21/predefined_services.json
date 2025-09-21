@@ -1,0 +1,20 @@
+{
+  "hV2b61RJkBGRPDo4iDos": {
+    "type": "km",
+    "reminderKm": 15000,
+    "serviceDetails": [
+      "olejovi filter"
+    ],
+    "name": "Výmena oleja v motore test",
+    "interval": 100000,
+    "createdAt": {
+      "_seconds": 1758465311,
+      "_nanoseconds": 646000000
+    },
+    "servicePolozky": [
+      "Filter",
+      "olej",
+      "diagnsotika"
+    ]
+  }
+}
