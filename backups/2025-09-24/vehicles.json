@@ -1,0 +1,380 @@
+{
+  "AA 466 SN": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "AA 466 SN"
+  },
+  "AA 732 GJ": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "AA 732 GJ"
+  },
+  "BL 040 EE": {
+    "licensePlate": "BL 040 EE",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "EL 449 AR": {
+    "licensePlate": "EL 449 AR",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "KOMPRESOR": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "KOMPRESOR"
+  },
+  "VZV": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "VZV"
+  },
+  "VZV2": {
+    "licensePlate": "VZV2",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 153 BL": {
+    "licensePlate": "ZC 153 BL",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 206 YD": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 206 YD"
+  },
+  "ZC 212YC": {
+    "licensePlate": "ZC 212YC",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 235YC": {
+    "licensePlate": "ZC 235YC",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 237YC": {
+    "licensePlate": "ZC 237YC",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 278 YC": {
+    "licensePlate": "ZC 278 YC",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 291 YD": {
+    "licensePlate": "ZC 291 YD",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 298YC": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 298YC"
+  },
+  "ZC 324 BL": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 324 BL"
+  },
+  "ZC 328 BL": {
+    "licensePlate": "ZC 328 BL",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 336 YD": {
+    "licensePlate": "ZC 336 YD",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 352 BP": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 352 BP"
+  },
+  "ZC 375 YC": {
+    "licensePlate": "ZC 375 YC",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 383 BL": {
+    "licensePlate": "ZC 383 BL",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 388 BS": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 388 BS"
+  },
+  "ZC 388 YC": {
+    "licensePlate": "ZC 388 YC",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 390YC": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 390YC"
+  },
+  "ZC 397YD": {
+    "licensePlate": "ZC 397YD",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 398 YC": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 398 YC"
+  },
+  "ZC 421 YD": {
+    "licensePlate": "ZC 421 YD",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 426 YD": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 426 YD"
+  },
+  "ZC 441 BV": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 441 BV"
+  },
+  "ZC 441 YD": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 441 YD"
+  },
+  "ZC 449 BV": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 449 BV"
+  },
+  "ZC 451 YD": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 451 YD"
+  },
+  "ZC 460 YC": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 460 YC"
+  },
+  "ZC 465 BS": {
+    "licensePlate": "ZC 465 BS",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 469 BS": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 469 BS"
+  },
+  "ZC 491 BS": {
+    "licensePlate": "ZC 491 BS",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 594 BN": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 594 BN"
+  },
+  "ZC 595 YB": {
+    "licensePlate": "ZC 595 YB",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 598YD": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 598YD"
+  },
+  "ZC 603YD": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 603YD"
+  },
+  "ZC 645 YB": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 645 YB"
+  },
+  "ZC 675 BT": {
+    "licensePlate": "ZC 675 BT",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 685 BP": {
+    "licensePlate": "ZC 685 BP",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 750 BO": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 750 BO"
+  },
+  "ZC 773 BS": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 773 BS"
+  },
+  "ZC 859 BR": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 859 BR"
+  },
+  "ZC 889 BS": {
+    "licensePlate": "ZC 889 BS",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 954 BA": {
+    "licensePlate": "ZC 954 BA",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 970 BP": {
+    "licensePlate": "ZC 970 BP",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC 974 BP": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZC 974 BP"
+  },
+  "ZC Z086": {
+    "licensePlate": "ZC Z086",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZC241BP": {
+    "licensePlate": "ZC241BP",
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    }
+  },
+  "ZERIAV": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZERIAV"
+  },
+  "ZH 667 CP": {
+    "createdAt": {
+      "_seconds": 1758528594,
+      "_nanoseconds": 278000000
+    },
+    "licensePlate": "ZH 667 CP"
+  }
+}
