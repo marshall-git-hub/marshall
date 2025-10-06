@@ -1,0 +1,244 @@
+{
+  "ZC206YD": {
+    "slots": [
+      {
+        "tire": null,
+        "position": "Ľavé predné",
+        "id": "left-front"
+      },
+      {
+        "id": "left-middle",
+        "tire": null,
+        "position": "Ľavé stredné"
+      },
+      {
+        "position": "Ľavé zadné",
+        "id": "left-rear",
+        "tire": null
+      },
+      {
+        "position": "Pravé predné",
+        "tire": null,
+        "id": "right-front"
+      },
+      {
+        "tire": null,
+        "position": "Pravé stredné",
+        "id": "right-middle"
+      },
+      {
+        "id": "right-rear",
+        "tire": null,
+        "position": "Pravé zadné"
+      }
+    ]
+  },
+  "ZC235YC": {
+    "slots": [
+      {
+        "id": "left-front",
+        "position": "Ľavé predné",
+        "tire": null
+      },
+      {
+        "position": "Ľavé stredné",
+        "tire": null,
+        "id": "left-middle"
+      },
+      {
+        "id": "left-rear",
+        "tire": {
+          "type": "GTR955",
+          "km": 7000,
+          "dot": "03/2025",
+          "id": "9zH41xpUSmol1yw05sFe",
+          "kmOnAssign": 1427515,
+          "customId": "5HD89300I8",
+          "brand": "Giti",
+          "size": "385/55 R22.5"
+        },
+        "position": "Ľavé zadné"
+      },
+      {
+        "tire": null,
+        "id": "right-front",
+        "position": "Pravé predné"
+      },
+      {
+        "position": "Pravé stredné",
+        "tire": null,
+        "id": "right-middle"
+      },
+      {
+        "position": "Pravé zadné",
+        "id": "right-rear",
+        "tire": {
+          "km": 7000,
+          "kmOnAssign": 1427515,
+          "customId": "5HB363I552",
+          "size": "385/55 R22.5",
+          "dot": "03/2025",
+          "brand": "Giti",
+          "type": "GTR955",
+          "id": "IBy9vjwmW8thlllgafBc"
+        }
+      }
+    ]
+  },
+  "ZC397YD": {
+    "slots": [
+      {
+        "id": "left-front",
+        "tire": null,
+        "position": "Ľavé predné"
+      },
+      {
+        "position": "Ľavé stredné",
+        "tire": null,
+        "id": "left-middle"
+      },
+      {
+        "position": "Ľavé zadné",
+        "tire": {
+          "customId": "M2R360839",
+          "brand": "Brigestone",
+          "km": 0,
+          "dot": "03/2022",
+          "size": "435/50 R19.5",
+          "kmOnAssign": 378759,
+          "type": "R166 II",
+          "id": "qXKnsCYreYqFRtfO1Hi0"
+        },
+        "id": "left-rear"
+      },
+      {
+        "position": "Pravé predné",
+        "id": "right-front",
+        "tire": null
+      },
+      {
+        "tire": null,
+        "position": "Pravé stredné",
+        "id": "right-middle"
+      },
+      {
+        "tire": {
+          "size": "435/50 R19.5",
+          "kmOnAssign": 378759,
+          "dot": "03/2022",
+          "id": "N3J3n8qLPFJkFNNtKjxS",
+          "customId": "M2R360762",
+          "km": 0,
+          "brand": "Brigestone",
+          "type": "R166 II"
+        },
+        "position": "Pravé zadné",
+        "id": "right-rear"
+      }
+    ]
+  },
+  "ZC451YD": {
+    "slots": [
+      {
+        "id": "left-front",
+        "position": "Ľavé predné",
+        "tire": null
+      },
+      {
+        "id": "left-middle",
+        "position": "Ľavé stredné",
+        "tire": null
+      },
+      {
+        "id": "left-rear",
+        "position": "Ľavé zadné",
+        "tire": {
+          "id": "RPjsQNyQbrFxDbrQskbW",
+          "customId": "M1B406740",
+          "brand": "Brigestone",
+          "type": "R166 II",
+          "size": "435/50 R19.5",
+          "dot": "06/2025",
+          "km": 0,
+          "kmOnAssign": 401363
+        }
+      },
+      {
+        "id": "right-front",
+        "position": "Pravé predné",
+        "tire": null
+      },
+      {
+        "id": "right-middle",
+        "position": "Pravé stredné",
+        "tire": null
+      },
+      {
+        "id": "right-rear",
+        "position": "Pravé zadné",
+        "tire": {
+          "id": "BWar9gRFoDO1e3c9bRWT",
+          "customId": "M1B407613",
+          "brand": "Brigestone",
+          "type": "R166 II",
+          "size": "435/50 R19.5",
+          "dot": "06/2025",
+          "km": 0,
+          "kmOnAssign": 401363
+        }
+      }
+    ]
+  },
+  "ZC460YC": {
+    "slots": [
+      {
+        "id": "left-front",
+        "position": "Ľavé predné",
+        "tire": {
+          "size": "385/55 R22.5",
+          "kmOnAssign": 1150169,
+          "customId": "C7V241623",
+          "km": 0,
+          "type": "FT524",
+          "id": "f1rmFRkxmYN52ztUJJyq",
+          "brand": "Firestone",
+          "dot": "05/2025"
+        }
+      },
+      {
+        "tire": null,
+        "id": "left-middle",
+        "position": "Ľavé stredné"
+      },
+      {
+        "id": "left-rear",
+        "position": "Ľavé zadné",
+        "tire": null
+      },
+      {
+        "position": "Pravé predné",
+        "tire": {
+          "id": "7DZzhtoqHFTS2IBqfyUx",
+          "customId": "C7V243141",
+          "brand": "Firestone",
+          "type": "FT524",
+          "size": "385/55 R22.5",
+          "dot": "05/2025",
+          "km": 0,
+          "kmOnAssign": 1150169
+        },
+        "id": "right-front"
+      },
+      {
+        "position": "Pravé stredné",
+        "id": "right-middle",
+        "tire": null
+      },
+      {
+        "id": "right-rear",
+        "tire": null,
+        "position": "Pravé zadné"
+      }
+    ]
+  }
+}
