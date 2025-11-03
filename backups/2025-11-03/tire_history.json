@@ -1,0 +1,1176 @@
+{
+  "3Dw0fym36GxStdjy4gjy": {
+    "vehicleId": "ZC449BV",
+    "position": "Zadné pravé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "Gz2O39Uu3druHcJg0of9",
+      "customId": "E7W352689",
+      "brand": "Firestone",
+      "type": "Fd624",
+      "size": "295/60 R22.5",
+      "dot": "09/2024",
+      "km": 0,
+      "kmOnAssign": 378951,
+      "status": "assigned"
+    },
+    "vehicleKm": 378951,
+    "date": "2025-10-24T14:46:51.005Z"
+  },
+  "4FN7vSHdzvwdzjaZYfyO": {
+    "vehicleId": "ZC451YD",
+    "position": "Ľavé zadné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "RPjsQNyQbrFxDbrQskbW",
+      "customId": "M1B406740",
+      "brand": "Brigestone",
+      "type": "R166 II",
+      "size": "435/50 R19.5",
+      "dot": "06/2025",
+      "km": 0,
+      "kmOnAssign": 401363,
+      "status": "assigned"
+    },
+    "vehicleKm": 401363,
+    "date": "2025-09-16T07:57:16.216Z"
+  },
+  "4Mo2BwDqq0b5se9RpSIx": {
+    "vehicleId": "ZC750BO",
+    "position": "Zadné pravé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "hG39KLWa3fsib8NSAH3r",
+      "customId": "JMC9331C",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "315/70 R22.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 749799,
+      "status": "assigned"
+    },
+    "vehicleKm": 749799,
+    "date": "2025-10-30T09:39:25.721Z"
+  },
+  "4ZbaPg7gzDTESNlicHk8": {
+    "vehicleId": "ZC465BS",
+    "position": "Zadné ľavé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "QPWB7nnXwt4O2lihp7lK",
+      "customId": "HLD80707R",
+      "brand": "BFGoodreech",
+      "type": "Route Control",
+      "size": "295/60 R22.5",
+      "dot": "03/2025",
+      "km": 0,
+      "kmOnAssign": 280053,
+      "status": "assigned"
+    },
+    "vehicleKm": 280053,
+    "date": "2025-10-23T08:06:22.136Z"
+  },
+  "7A8NFnob1NsnBszqVShb": {
+    "vehicleId": "ZC675BT",
+    "position": "Zadné ľavé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "INdn35I0PJi9rij4mYcm",
+      "customId": "E7P426694",
+      "brand": "Brigestone",
+      "type": "Duravis",
+      "size": "315/70 R22.5",
+      "dot": "09/2019",
+      "km": 0,
+      "kmOnAssign": 551069,
+      "status": "assigned"
+    },
+    "vehicleKm": 551069,
+    "date": "2025-10-26T08:36:53.502Z"
+  },
+  "7bJhrhTJClL4NCh323EP": {
+    "vehicleId": "ZC750BO",
+    "position": "Zadné ľavé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "VolDRzf3DVj8b3WjZpdr",
+      "customId": "JMC9455C",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "315/70 R22.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 749799,
+      "status": "assigned"
+    },
+    "vehicleKm": 749799,
+    "date": "2025-10-30T09:04:57.293Z"
+  },
+  "7gIpblvbLQUIXrrxM9Yh": {
+    "vehicleId": "ZC773BS",
+    "position": "Zadné ľavé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "HJjL7rPwxbM991Geffkp",
+      "customId": "JMS78766",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "10/2025",
+      "km": 0,
+      "kmOnAssign": 521039,
+      "status": "assigned"
+    },
+    "vehicleKm": 521039,
+    "date": "2025-10-31T12:54:03.886Z"
+  },
+  "AB8ud7p9sgBk8XRv7TCq": {
+    "vehicleId": "ZC465BS",
+    "position": "Zadné ľavé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "pxU0FXw7XVVPgYIBTW0U",
+      "customId": "HLD80681R",
+      "brand": "BFGoodreech",
+      "type": "Route Control",
+      "size": "295/60 R22.5",
+      "dot": "03/2025",
+      "km": 0,
+      "kmOnAssign": 280053,
+      "status": "assigned"
+    },
+    "vehicleKm": 280053,
+    "date": "2025-10-23T08:06:16.207Z"
+  },
+  "AGZpXXXBNNSZ7uVrCdle": {
+    "date": "2025-05-23T13:42:44.237Z",
+    "installedTire": {
+      "brand": "Continetal",
+      "customId": "6158822373",
+      "dot": "04/2025",
+      "id": "JFufFeD1wsAt0Vw6QuEg",
+      "km": 0,
+      "kmOnAssign": 31303,
+      "size": "295/60 R22.5",
+      "type": "HS3"
+    },
+    "removedTire": null,
+    "vehicleId": "AA466SN",
+    "vehicleKm": 31303,
+    "vehicleType": "truck",
+    "position": "Zadné pravé vnútorné"
+  },
+  "CxUh5AmOPkNNLwiDesiQ": {
+    "date": "2025-05-23T13:42:44.237Z",
+    "installedTire": {
+      "brand": "Continetal",
+      "customId": "6158821956",
+      "dot": "04/2025",
+      "id": "ca2OCdkoGiE0suBaXxiq",
+      "km": 0,
+      "kmOnAssign": 31303,
+      "size": "295/60 R22.5",
+      "type": "HS3"
+    },
+    "removedTire": null,
+    "vehicleId": "AA466SN",
+    "vehicleKm": 31303,
+    "vehicleType": "truck",
+    "position": "Zadné pravé vonkajšie"
+  },
+  "ELwpe1hYPkXiv3NSGLSb": {
+    "vehicleId": "ZC773BS",
+    "position": "Zadné ľavé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "827H7N7bpbpFe9GPsDuZ",
+      "customId": "JMS79443",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "10/2025",
+      "km": 0,
+      "kmOnAssign": 521039,
+      "status": "assigned"
+    },
+    "vehicleKm": 521039,
+    "date": "2025-10-31T12:55:49.207Z"
+  },
+  "GpDjofLeNo2ma2C4jLwx": {
+    "vehicleId": "ZC460YC",
+    "vehicleType": "trailer",
+    "position": "Ľavé predné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "f1rmFRkxmYN52ztUJJyq",
+      "customId": "C7V241623",
+      "brand": "Firestone",
+      "type": "FT524",
+      "size": "385/55 R22.5",
+      "dot": "05/2025",
+      "km": 0,
+      "kmOnAssign": 1150169
+    },
+    "date": "2025-08-23T14:09:17.252Z",
+    "vehicleKm": 1150169
+  },
+  "H2YHLHhT8WAbXf2bW3X7": {
+    "vehicleId": "ZC469BS",
+    "vehicleType": "truck",
+    "position": "Predné pravé",
+    "removedTire": null,
+    "installedTire": {
+      "id": "SIkzVKAlmycz2DxaOUD0",
+      "customId": "KUD04146",
+      "brand": "Hankook",
+      "type": "AH31",
+      "size": "355/50 R22.5",
+      "dot": "08/2020",
+      "km": 20000,
+      "kmOnAssign": 245102
+    },
+    "vehicleKm": 245102,
+    "date": "2025-07-23T13:55:50.514Z"
+  },
+  "HhOZRkX9HW0V2U4fHBG9": {
+    "vehicleId": "ZC441BV",
+    "position": "Zadné ľavé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "QsdkRysqusR9YEvw8qFP",
+      "customId": "JMC84382",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 391281,
+      "status": "assigned"
+    },
+    "vehicleKm": 391281,
+    "date": "2025-10-29T08:28:42.675Z"
+  },
+  "IyKy4ZR8mOheaVattx9k": {
+    "vehicleId": "ZC352BP",
+    "position": "Zadné pravé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "AZ576Sp32iYvcILXNg7W",
+      "customId": "JMC2237A",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 656235,
+      "status": "assigned"
+    },
+    "vehicleKm": 656235,
+    "date": "2025-10-27T12:53:25.796Z"
+  },
+  "JO2sNtS5RQrOgxfjBhyC": {
+    "date": "2025-05-23T13:42:44.237Z",
+    "installedTire": {
+      "brand": "Continetal",
+      "customId": "6159133677",
+      "dot": "04/2025",
+      "id": "JGiHOZlwfFIpXmxr3nnz",
+      "km": 0,
+      "kmOnAssign": 31303,
+      "size": "315/60 R22.5",
+      "type": "HS3"
+    },
+    "removedTire": null,
+    "vehicleId": "AA466SN",
+    "vehicleKm": 31303,
+    "vehicleType": "truck",
+    "position": "Predné ľavé"
+  },
+  "LvbyhcXR4JcrOw4eqF2J": {
+    "vehicleId": "ZC460YC",
+    "vehicleType": "trailer",
+    "position": "Pravé predné",
+    "removedTire": {
+      "brand": "Firestone",
+      "id": "7DZzhtoqHFTS2IBqfyUx",
+      "customId": "C7V243141",
+      "kmOnAssign": 1150169,
+      "type": "FT524",
+      "dot": "05/2025",
+      "size": "385/55 R22.5",
+      "km": 0,
+      "status": "available"
+    },
+    "installedTire": null,
+    "date": "2025-08-23T14:09:21.656Z",
+    "vehicleKm": 1150169
+  },
+  "MW8zistN9SR9AD3v0hCW": {
+    "vehicleId": "ZC441BV",
+    "position": "Zadné ľavé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "3TBeewuIm9YMndNYbvAP",
+      "customId": "JMC90291",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 391281,
+      "status": "assigned"
+    },
+    "vehicleKm": 391281,
+    "date": "2025-10-29T08:29:42.297Z"
+  },
+  "NAZmSvftFNYTjDZouatX": {
+    "vehicleId": "ZC449BV",
+    "position": "Zadné ľavé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "WLVE47R5T6lrZ9qitkzD",
+      "customId": "E7W371013",
+      "brand": "Firestone",
+      "type": "Fd624",
+      "size": "295/60 R22.5",
+      "dot": "09/2024",
+      "km": 0,
+      "kmOnAssign": 378951,
+      "status": "assigned"
+    },
+    "vehicleKm": 378951,
+    "date": "2025-10-24T14:47:21.443Z"
+  },
+  "OftRTKJmap01oVe6z5eP": {
+    "vehicleId": "ZC235YC",
+    "vehicleType": "trailer",
+    "position": "Pravé zadné",
+    "removedTire": {
+      "dot": "03/2025",
+      "kmOnAssign": 1427515,
+      "brand": "Giti",
+      "id": "IBy9vjwmW8thlllgafBc",
+      "size": "385/55 R22.5",
+      "customId": "5HB363I552",
+      "km": 7000,
+      "type": "GTR955",
+      "status": "available"
+    },
+    "installedTire": null,
+    "date": "2025-08-23T14:08:49.173Z",
+    "vehicleKm": 1427515
+  },
+  "PXQX5TrDonfx1cI4OhQX": {
+    "vehicleId": "ZC465BS",
+    "position": "Zadné ľavé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "pxU0FXw7XVVPgYIBTW0U",
+      "customId": "HLD80681R",
+      "brand": "BFGoodreech",
+      "type": "Route Control",
+      "size": "295/60 R22.5",
+      "dot": "03/2025",
+      "km": 0,
+      "kmOnAssign": 280053,
+      "status": "assigned"
+    },
+    "vehicleKm": 280053,
+    "date": "2025-10-23T08:04:19.117Z"
+  },
+  "PgE1AGMtz3kjgUTp2yTE": {
+    "date": "2025-05-23T13:42:44.237Z",
+    "installedTire": {
+      "brand": "Continetal",
+      "customId": "6158783788",
+      "dot": "04/2025",
+      "id": "85EDDNFlxTJlLPIZqeqm",
+      "km": 0,
+      "kmOnAssign": 31303,
+      "size": "295/60 R22.5",
+      "type": "HS3"
+    },
+    "removedTire": null,
+    "vehicleId": "AA466SN",
+    "vehicleKm": 31303,
+    "vehicleType": "truck",
+    "position": "Zadné ľavé vnútorné"
+  },
+  "QFfsimflnAa1nXHBIPGa": {
+    "vehicleId": "AA732GJ",
+    "position": "front-left",
+    "removedTire": {
+      "id": "LID4IB4xz6mkOhuJQ5oD",
+      "customId": "6159041110",
+      "brand": "Continental",
+      "type": "HS3",
+      "size": "315/60 R22.5",
+      "dot": "04/2025",
+      "km": 0,
+      "kmOnAssign": 36358,
+      "status": "sklad"
+    },
+    "installedTire": null,
+    "vehicleKm": 36358,
+    "date": "2025-09-17T10:36:33.915Z"
+  },
+  "Qn6gayVifx8FPGUhpplw": {
+    "vehicleId": "ZC675BT",
+    "position": "Zadné ľavé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "sCma31nni6dXmVnQCdGg",
+      "customId": "E7P426900",
+      "brand": "Brigestone",
+      "type": "Duravis",
+      "size": "315/70 R22.5",
+      "dot": "09/2019",
+      "km": 0,
+      "kmOnAssign": 551069,
+      "status": "assigned"
+    },
+    "vehicleKm": 551069,
+    "date": "2025-10-26T08:36:56.964Z"
+  },
+  "RWmCVKI1lvTczIAmEMMW": {
+    "vehicleId": "ZC235YC",
+    "vehicleType": "trailer",
+    "position": "Ľavé zadné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "9zH41xpUSmol1yw05sFe",
+      "customId": "5HD89300I8",
+      "brand": "Giti",
+      "type": "GTR955",
+      "size": "385/55 R22.5",
+      "dot": "03/2025",
+      "km": 7000,
+      "kmOnAssign": 1427515
+    },
+    "date": "2025-08-23T14:08:45.027Z",
+    "vehicleKm": 1427515
+  },
+  "RbiHWhLwhYMbeWto0pYG": {
+    "vehicleId": "ZC465BS",
+    "position": "Zadné pravé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "XchUJj1ngM80gn0jWlTe",
+      "customId": "HLD80636R",
+      "brand": "BFGoodreech",
+      "type": "Route Control",
+      "size": "295/60 R22.5",
+      "dot": "03/2025",
+      "km": 0,
+      "kmOnAssign": 280053,
+      "status": "assigned"
+    },
+    "vehicleKm": 280053,
+    "date": "2025-10-23T07:34:30.576Z"
+  },
+  "Sll1xe86LUxCC9JPOhOu": {
+    "vehicleId": "ZC675BT",
+    "position": "Zadné pravé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "aFyy5WAnavcRzAFuH78u",
+      "customId": "E7P426708",
+      "brand": "Brigestone",
+      "type": "Duravis",
+      "size": "315/70 R22.5",
+      "dot": "09/2019",
+      "km": 0,
+      "kmOnAssign": 551069,
+      "status": "assigned"
+    },
+    "vehicleKm": 551069,
+    "date": "2025-10-26T08:23:03.170Z"
+  },
+  "TWXehzYWbXFlDsmvOB0v": {
+    "vehicleId": "ZC750BO",
+    "position": "Zadné pravé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "EigSPaLdnR3tCtkHnOcS",
+      "customId": "JMC95888",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "315/70 R22.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 749799,
+      "status": "assigned"
+    },
+    "vehicleKm": 749799,
+    "date": "2025-10-30T09:29:16.562Z"
+  },
+  "TdVatCQm10s4PFnNxSda": {
+    "vehicleId": "ZC235YC",
+    "vehicleType": "trailer",
+    "position": "Pravé zadné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "IBy9vjwmW8thlllgafBc",
+      "customId": "5HB363I552",
+      "brand": "Giti",
+      "type": "GTR955",
+      "size": "385/55 R22.5",
+      "dot": "03/2025",
+      "km": 7000,
+      "kmOnAssign": 1427515
+    },
+    "date": "2025-08-23T14:08:55.075Z",
+    "vehicleKm": 1427515
+  },
+  "UKQZXW2axegqZo4VAsUF": {
+    "vehicleId": "ZC491BS",
+    "position": "Zadné ľavé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "4aUihou0OuCPhSgDJuXb",
+      "customId": "LSH04425",
+      "brand": "HANKOOK",
+      "type": "DH31",
+      "size": "315/70 R22.5",
+      "dot": "09/2020",
+      "km": 0,
+      "kmOnAssign": 783213,
+      "status": "assigned"
+    },
+    "vehicleKm": 783213,
+    "date": "2025-10-24T11:27:04.986Z"
+  },
+  "UVQvSW1K68ouFeeU6dtS": {
+    "vehicleId": "ZC451YD",
+    "position": "left-rear",
+    "removedTire": {
+      "id": "BWar9gRFoDO1e3c9bRWT",
+      "customId": "M1B407613",
+      "brand": "Brigestone",
+      "type": "R166 II",
+      "size": "435/50 R19.5",
+      "dot": "06/2025",
+      "km": 0,
+      "kmOnAssign": 401363,
+      "status": "sklad"
+    },
+    "installedTire": null,
+    "vehicleKm": 401363,
+    "date": "2025-09-16T07:57:00.461Z"
+  },
+  "WAd5u0DJs33HX2IbJ6rF": {
+    "vehicleId": "ZC449BV",
+    "position": "Zadné pravé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "QYGwLK4fSMKPoe9n2wn5",
+      "customId": "E7374143",
+      "brand": "Firestone",
+      "type": "Fd624",
+      "size": "295/60 R22.5",
+      "dot": "09/2024",
+      "km": 0,
+      "kmOnAssign": 378951,
+      "status": "assigned"
+    },
+    "vehicleKm": 378951,
+    "date": "2025-10-24T14:46:20.466Z"
+  },
+  "WJ1V8mc4SjYcziMbZxwl": {
+    "vehicleId": "ZC352BP",
+    "position": "Zadné ľavé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "TIb2f25YzJP1GIn3PFMK",
+      "customId": "JMC2205A",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 656235,
+      "status": "assigned"
+    },
+    "vehicleKm": 656235,
+    "date": "2025-10-27T12:26:59.084Z"
+  },
+  "WT15te2FfZwTpzJbxxv5": {
+    "vehicleId": "ZC465BS",
+    "position": "Zadné pravé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "J5buwVA9TblhjpxMa1H9",
+      "customId": "HLD80685R",
+      "brand": "BFGoodreech",
+      "type": "Route Control",
+      "size": "295/60 R22.5",
+      "dot": "03/2025",
+      "km": 0,
+      "kmOnAssign": 280053,
+      "status": "assigned"
+    },
+    "vehicleKm": 280053,
+    "date": "2025-10-23T07:33:56.916Z"
+  },
+  "Wnm0WXyD8uXeJGN2A2WZ": {
+    "vehicleId": "ZC773BS",
+    "position": "Zadné pravé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "EwueWjrJpEIOanfRnQiY",
+      "customId": "JMS79401",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "10/2025",
+      "km": 0,
+      "kmOnAssign": 521039,
+      "status": "assigned"
+    },
+    "vehicleKm": 521039,
+    "date": "2025-10-31T12:56:13.959Z"
+  },
+  "WsHlSrHF4qkuqAjz89kO": {
+    "vehicleId": "ZC491BS",
+    "position": "Zadné pravé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "m9LWVUQ5AzqhiZkigzP6",
+      "customId": "LSB06221",
+      "brand": "HANKOOK",
+      "type": "DH31",
+      "size": "315/70 R22.5",
+      "dot": "09/2020",
+      "km": 0,
+      "kmOnAssign": 783213,
+      "status": "assigned"
+    },
+    "vehicleKm": 783213,
+    "date": "2025-10-24T11:26:37.507Z"
+  },
+  "YalteSN3NjphFFfsJNH8": {
+    "vehicleId": "AA732GJ",
+    "position": "Predné pravé",
+    "removedTire": null,
+    "installedTire": {
+      "id": "0xaHRSTvxH0BVOty6A3y",
+      "customId": "6159040829",
+      "brand": "Continental",
+      "type": "HS3",
+      "size": "315/60 R22.5",
+      "dot": "03/2025",
+      "km": 36358,
+      "kmOnAssign": 36358,
+      "status": "assigned"
+    },
+    "vehicleKm": 36358,
+    "date": "2025-09-17T10:36:31.776Z"
+  },
+  "c9bLyillT30ku7lC3k4S": {
+    "vehicleId": "ZC773BS",
+    "position": "Zadné pravé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "WD0ockD3TmKHj21ebkVP",
+      "customId": "JMS79496",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "10/2025",
+      "km": 0,
+      "kmOnAssign": 521039,
+      "status": "assigned"
+    },
+    "vehicleKm": 521039,
+    "date": "2025-10-31T12:56:23.982Z"
+  },
+  "eBupLU3nTCUzCuv5oDjg": {
+    "vehicleId": "ZC235YC",
+    "vehicleType": "trailer",
+    "position": "Ľavé zadné",
+    "removedTire": {
+      "dot": "03/2025",
+      "size": "385/55 R22.5",
+      "id": "9zH41xpUSmol1yw05sFe",
+      "customId": "5HD89300I8",
+      "brand": "Giti",
+      "km": 7000,
+      "kmOnAssign": 1427515,
+      "type": "GTR955",
+      "status": "available"
+    },
+    "installedTire": null,
+    "date": "2025-08-23T14:08:42.672Z",
+    "vehicleKm": 1427515
+  },
+  "eQIqKUH9OlYLMDfQ7h47": {
+    "vehicleId": "ZC451YD",
+    "position": "Ľavé zadné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "BWar9gRFoDO1e3c9bRWT",
+      "customId": "M1B407613",
+      "brand": "Brigestone",
+      "type": "R166 II",
+      "size": "435/50 R19.5",
+      "dot": "06/2025",
+      "km": 0,
+      "kmOnAssign": 401363,
+      "status": "assigned"
+    },
+    "vehicleKm": 401363,
+    "date": "2025-09-16T07:56:44.958Z"
+  },
+  "euzCefmcNxbeXt1s7wmn": {
+    "vehicleId": "ZC441BV",
+    "position": "Zadné pravé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "ofQtJotB5YDmaiqZ0DEQ",
+      "customId": "JMS72226",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "10/2025",
+      "km": 0,
+      "kmOnAssign": 391281,
+      "status": "assigned"
+    },
+    "vehicleKm": 391281,
+    "date": "2025-10-29T07:50:39.861Z"
+  },
+  "fjNiZ0fbiI3iNjA2WXRC": {
+    "vehicleId": "ZC460YC",
+    "vehicleType": "trailer",
+    "position": "Ľavé predné",
+    "removedTire": {
+      "brand": "Firestone",
+      "type": "FT524",
+      "dot": "05/2025",
+      "km": 0,
+      "size": "385/55 R22.5",
+      "customId": "C7V241623",
+      "kmOnAssign": 1150169,
+      "id": "f1rmFRkxmYN52ztUJJyq",
+      "status": "available"
+    },
+    "installedTire": null,
+    "date": "2025-08-23T14:09:15.069Z",
+    "vehicleKm": 1150169
+  },
+  "fwAAiZiGwYeuAIYPWbbn": {
+    "vehicleId": "AA732GJ",
+    "position": "Predné ľavé",
+    "removedTire": null,
+    "installedTire": {
+      "id": "LID4IB4xz6mkOhuJQ5oD",
+      "customId": "6159041110",
+      "brand": "Continental",
+      "type": "HS3",
+      "size": "315/60 R22.5",
+      "dot": "04/2025",
+      "km": 0,
+      "kmOnAssign": 36358,
+      "status": "assigned"
+    },
+    "vehicleKm": 36358,
+    "date": "2025-09-17T10:36:27.849Z"
+  },
+  "hf4u7VV21gDrVvbi88Vo": {
+    "vehicleId": "ZC460YC",
+    "vehicleType": "trailer",
+    "position": "Pravé predné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "7DZzhtoqHFTS2IBqfyUx",
+      "customId": "C7V243141",
+      "brand": "Firestone",
+      "type": "FT524",
+      "size": "385/55 R22.5",
+      "dot": "05/2025",
+      "km": 0,
+      "kmOnAssign": 1150169
+    },
+    "date": "2025-08-23T14:09:58.467Z",
+    "vehicleKm": 1150169
+  },
+  "hu600RDf1v5js3Ax9l7M": {
+    "vehicleId": "ZC675BT",
+    "position": "Zadné pravé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "CYbMxe0NMtybCDFGCxc5",
+      "customId": "E7P478814",
+      "brand": "Brigestone",
+      "type": "Duravis",
+      "size": "315/70 R22.5",
+      "dot": "09/2019",
+      "km": 0,
+      "kmOnAssign": 551069,
+      "status": "assigned"
+    },
+    "vehicleKm": 551069,
+    "date": "2025-10-26T08:23:16.391Z"
+  },
+  "iFHYayad5881wj21g2oC": {
+    "vehicleId": "ZC449BV",
+    "position": "Zadné ľavé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "OmQEjG3qiLviGwAdfu9Q",
+      "customId": "E7W352814",
+      "brand": "Firestone",
+      "type": "Fd624",
+      "size": "295/60 R22.5",
+      "dot": "09/2024",
+      "km": 0,
+      "kmOnAssign": 378951,
+      "status": "assigned"
+    },
+    "vehicleKm": 378951,
+    "date": "2025-10-24T14:47:07.902Z"
+  },
+  "iUTYKLD9ficGvzTVeOSO": {
+    "vehicleId": "ZC352BP",
+    "position": "rear-right-outer",
+    "removedTire": {
+      "dot": "09/2025",
+      "customId": "JMC17070",
+      "id": "CSzsZeyv0lK6hAZvX8DI",
+      "kmOnAssign": 656235,
+      "type": "H02 Pro",
+      "size": "435/50 R19.5",
+      "brand": "Prometeon",
+      "km": 5432,
+      "status": "sklad"
+    },
+    "installedTire": null,
+    "vehicleKm": 661667,
+    "date": "2025-10-29T08:31:00.408Z"
+  },
+  "iwWSdPIqYvE11ivZsDfo": {
+    "vehicleId": "ZC397YD",
+    "removedTire": null,
+    "installedTire": {
+      "id": "N3J3n8qLPFJkFNNtKjxS",
+      "type": "R166 II",
+      "size": "435/50 R19.5",
+      "kmOnAssign": 378759,
+      "status": "assigned",
+      "customId": "M2R360762",
+      "brand": "Brigestone",
+      "km": 0,
+      "dot": "03/2022"
+    },
+    "date": "2025-09-26T06:59:31.516Z",
+    "vehicleKm": 378759,
+    "position": "Pravé zadné"
+  },
+  "jFIz3NRV0aK1VXHP2VvE": {
+    "removedTire": null,
+    "date": "2025-09-26T06:58:12.845Z",
+    "vehicleId": "ZC397YD",
+    "position": "Ľavé zadné",
+    "vehicleKm": 378759,
+    "installedTire": {
+      "status": "assigned",
+      "customId": "M2R360839",
+      "dot": "03/2022",
+      "type": "R166 II",
+      "km": 0,
+      "brand": "Brigestone",
+      "size": "435/50 R19.5",
+      "id": "qXKnsCYreYqFRtfO1Hi0",
+      "kmOnAssign": 378759
+    }
+  },
+  "jdXoZ4x0vDSMl89iQztK": {
+    "vehicleId": "ZC441BV",
+    "position": "Zadné pravé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "ivo2K3VGWhgN22aeIbnx",
+      "customId": "JMC2244A",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 391281,
+      "status": "assigned"
+    },
+    "vehicleKm": 391281,
+    "date": "2025-10-29T07:50:16.232Z"
+  },
+  "l3jvePJtDYcc7fHnxotF": {
+    "date": "2025-05-23T13:42:44.237Z",
+    "installedTire": {
+      "brand": "Continetal",
+      "customId": "6159132114",
+      "dot": "04/2025",
+      "id": "YWH0cO0CSv3TJivaHq8H",
+      "km": 0,
+      "kmOnAssign": 31303,
+      "size": "315/60 R22.5",
+      "type": "HS3"
+    },
+    "removedTire": null,
+    "vehicleId": "AA466SN",
+    "vehicleKm": 31303,
+    "vehicleType": "truck",
+    "position": "Predné pravé"
+  },
+  "lHUrKVzR7h4EBOdI1gFW": {
+    "vehicleId": "ZC750BO",
+    "position": "Zadné pravé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "DkJQz7qkk9J34BuIVaGZ",
+      "customId": "JMC17118",
+      "brand": "Prometeon",
+      "type": "H02 Pro",
+      "size": "435/50 R19.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 749799,
+      "status": "assigned"
+    },
+    "vehicleKm": 749799,
+    "date": "2025-10-30T09:28:40.771Z"
+  },
+  "llHAa9c5xRNfBXn8Xr5e": {
+    "vehicleId": "ZC465BS",
+    "position": "rear-left-outer",
+    "removedTire": {
+      "id": "pxU0FXw7XVVPgYIBTW0U",
+      "customId": "HLD80681R",
+      "brand": "BFGoodreech",
+      "type": "Route Control",
+      "size": "295/60 R22.5",
+      "dot": "03/2025",
+      "km": 0,
+      "kmOnAssign": 280053,
+      "status": "sklad"
+    },
+    "installedTire": null,
+    "vehicleKm": 280053,
+    "date": "2025-10-23T08:04:23.935Z"
+  },
+  "nDdJ9K6bjc8KXiXEgRBM": {
+    "vehicleId": "AA466SN",
+    "vehicleType": "truck",
+    "position": "Predné ľavé",
+    "removedTire": null,
+    "vehicleKm": 31303,
+    "date": "2025-05-23T13:42:44.237Z",
+    "installedTire": {
+      "id": "JGiHOZlwfFIpXmxr3nnz",
+      "customId": "6159133677",
+      "brand": "Continetal",
+      "type": "HS3",
+      "size": "315/60 R22.5",
+      "dot": "04/2025",
+      "kmOnAssign": 31303,
+      "km": 0
+    }
+  },
+  "ouJwGQOHDp2qNIGC5Rj3": {
+    "vehicleId": "ZC750BO",
+    "position": "Zadné ľavé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "MMgbisUDq27T0lT79vXu",
+      "customId": "JMC5667A",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "315/70 R22.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 749799,
+      "status": "assigned"
+    },
+    "vehicleKm": 749799,
+    "date": "2025-10-30T09:21:38.943Z"
+  },
+  "qqUzRk3wpXHWp21L5Dg8": {
+    "vehicleId": "ZC451YD",
+    "position": "Pravé zadné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "BWar9gRFoDO1e3c9bRWT",
+      "customId": "M1B407613",
+      "brand": "Brigestone",
+      "type": "R166 II",
+      "size": "435/50 R19.5",
+      "dot": "06/2025",
+      "km": 0,
+      "kmOnAssign": 401363,
+      "status": "assigned"
+    },
+    "vehicleKm": 401363,
+    "date": "2025-09-16T07:57:23.504Z"
+  },
+  "tfPBn5KJHOGFABfUdRzB": {
+    "vehicleId": "AA732GJ",
+    "position": "Predné ľavé",
+    "removedTire": null,
+    "installedTire": {
+      "id": "LID4IB4xz6mkOhuJQ5oD",
+      "customId": "6159041110",
+      "brand": "Continental",
+      "type": "HS3",
+      "size": "315/60 R22.5",
+      "dot": "04/2025",
+      "km": 36358,
+      "kmOnAssign": 36358,
+      "status": "assigned"
+    },
+    "vehicleKm": 36358,
+    "date": "2025-09-17T10:36:56.264Z"
+  },
+  "tlq7iHff3fGeRC06elEg": {
+    "vehicleId": "ZC352BP",
+    "position": "Zadné pravé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "CSzsZeyv0lK6hAZvX8DI",
+      "customId": "JMC17070",
+      "brand": "Prometeon",
+      "type": "H02 Pro",
+      "size": "435/50 R19.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 656235,
+      "status": "assigned"
+    },
+    "vehicleKm": 656235,
+    "date": "2025-10-27T13:08:06.211Z"
+  },
+  "tyS4g1f6k9fXcsrLdBYq": {
+    "vehicleId": "ZC352BP",
+    "position": "Zadné pravé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "bag2xTM61ohhCpDRfGl4",
+      "customId": "JMC90192",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 661667,
+      "status": "assigned"
+    },
+    "vehicleKm": 661667,
+    "date": "2025-10-29T08:31:11.912Z"
+  },
+  "vmVyuY7lR2F1HrrZ4dmM": {
+    "vehicleId": "ZC352BP",
+    "position": "Zadné ľavé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "JYMbtW4tEhD6xPxKOxG9",
+      "customId": "JMC84208",
+      "brand": "Prometeon",
+      "type": "R02",
+      "size": "295/60 R22.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 656235,
+      "status": "assigned"
+    },
+    "vehicleKm": 656235,
+    "date": "2025-10-27T12:28:13.815Z"
+  },
+  "vsXzDkLA5i9sTFJzp6s8": {
+    "vehicleId": "ZC750BO",
+    "position": "rear-right-inner",
+    "removedTire": {
+      "id": "DkJQz7qkk9J34BuIVaGZ",
+      "customId": "JMC17118",
+      "brand": "Prometeon",
+      "type": "H02 Pro",
+      "size": "435/50 R19.5",
+      "dot": "09/2025",
+      "km": 0,
+      "kmOnAssign": 749799,
+      "status": "sklad"
+    },
+    "installedTire": null,
+    "vehicleKm": 749799,
+    "date": "2025-10-30T09:28:57.806Z"
+  },
+  "yZpLDsDbpzvXOWSBREcX": {
+    "vehicleId": "ZC491BS",
+    "position": "Zadné ľavé vnútorné",
+    "removedTire": null,
+    "installedTire": {
+      "id": "ztr6nNX1kdXiTNBQ3Y4A",
+      "customId": "LSH04375",
+      "brand": "HANKOOK",
+      "type": "DH31",
+      "size": "315/70 R22.5",
+      "dot": "09/2020",
+      "km": 0,
+      "kmOnAssign": 783213,
+      "status": "assigned"
+    },
+    "vehicleKm": 783213,
+    "date": "2025-10-24T11:27:12.957Z"
+  },
+  "zd76ag8uDvpCRFbXTKQR": {
+    "vehicleId": "ZC491BS",
+    "position": "Zadné pravé vonkajšie",
+    "removedTire": null,
+    "installedTire": {
+      "id": "BYDODbgHP0rLP2UV2xok",
+      "customId": "LSK04604",
+      "brand": "HANKOOK",
+      "type": "DH31",
+      "size": "315/70 R22.5",
+      "dot": "09/2020",
+      "km": 0,
+      "kmOnAssign": 783213,
+      "status": "assigned"
+    },
+    "vehicleKm": 783213,
+    "date": "2025-10-24T11:26:44.451Z"
+  },
+  "zm2qCSHPaMLaWcXNkDvn": {
+    "date": "2025-05-23T13:42:44.237Z",
+    "installedTire": {
+      "brand": "Continetal",
+      "customId": "615882944",
+      "dot": "04/2025",
+      "id": "aLbcSKzrCe5oTak3b3az",
+      "km": 0,
+      "kmOnAssign": 31303,
+      "size": "295/60 R22.5",
+      "type": "HS3"
+    },
+    "removedTire": null,
+    "vehicleId": "AA466SN",
+    "vehicleKm": 31303,
+    "vehicleType": "truck",
+    "position": "Zadné ľavé vonkajšie"
+  },
+  "zqUC3kbqU17ZoyrY5duw": {
+    "vehicleId": "ZC469BS",
+    "vehicleType": "truck",
+    "position": "Predné ľavé",
+    "removedTire": null,
+    "installedTire": {
+      "id": "ZWTo0lHNiQ7qbL9b5fJZ",
+      "customId": "KUE02145",
+      "brand": "Hankook",
+      "type": "AH31",
+      "size": "355/50 R22.5",
+      "dot": "08/2020",
+      "km": 20000,
+      "kmOnAssign": 245102
+    },
+    "vehicleKm": 245102,
+    "date": "2025-07-23T13:55:39.302Z"
+  }
+}

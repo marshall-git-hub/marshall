@@ -1,0 +1,860 @@
+{
+  "AA466SN": {
+    "slots": [
+      {
+        "tire": {
+          "id": "JGiHOZlwfFIpXmxr3nnz",
+          "dot": "04/2025",
+          "type": "HS3",
+          "km": 31303,
+          "customId": "6159133677",
+          "brand": "Continetal",
+          "kmOnAssign": 31303,
+          "size": "315/60 R22.5"
+        },
+        "category": "front",
+        "id": "front-left",
+        "position": "Predné ľavé"
+      },
+      {
+        "tire": {
+          "km": 31303,
+          "size": "315/60 R22.5",
+          "kmOnAssign": 31303,
+          "dot": "04/2025",
+          "brand": "Continetal",
+          "customId": "6159132114",
+          "id": "YWH0cO0CSv3TJivaHq8H",
+          "type": "HS3"
+        },
+        "id": "front-right",
+        "category": "front",
+        "position": "Predné pravé"
+      },
+      {
+        "tire": {
+          "dot": "04/2025",
+          "brand": "Continetal",
+          "km": 31303,
+          "size": "295/60 R22.5",
+          "kmOnAssign": 31303,
+          "type": "HS3",
+          "id": "aLbcSKzrCe5oTak3b3az",
+          "customId": "615882944"
+        },
+        "id": "rear-left-outer",
+        "category": "rear",
+        "position": "Zadné ľavé vonkajšie"
+      },
+      {
+        "position": "Zadné ľavé vnútorné",
+        "category": "rear",
+        "id": "rear-left-inner",
+        "tire": {
+          "type": "HS3",
+          "id": "85EDDNFlxTJlLPIZqeqm",
+          "kmOnAssign": 31303,
+          "brand": "Continetal",
+          "dot": "04/2025",
+          "customId": "6158783788",
+          "size": "295/60 R22.5",
+          "km": 31303
+        }
+      },
+      {
+        "category": "rear",
+        "id": "rear-right-outer",
+        "position": "Zadné pravé vonkajšie",
+        "tire": {
+          "type": "HS3",
+          "kmOnAssign": 31303,
+          "brand": "Continetal",
+          "km": 31303,
+          "customId": "6158821956",
+          "id": "ca2OCdkoGiE0suBaXxiq",
+          "size": "295/60 R22.5",
+          "dot": "04/2025"
+        }
+      },
+      {
+        "id": "rear-right-inner",
+        "position": "Zadné pravé vnútorné",
+        "tire": {
+          "size": "295/60 R22.5",
+          "brand": "Continetal",
+          "id": "JFufFeD1wsAt0Vw6QuEg",
+          "kmOnAssign": 31303,
+          "type": "HS3",
+          "customId": "6158822373",
+          "km": 31303,
+          "dot": "04/2025"
+        },
+        "category": "rear"
+      }
+    ]
+  },
+  "AA732GJ": {
+    "slots": [
+      {
+        "tire": {
+          "id": "LID4IB4xz6mkOhuJQ5oD",
+          "customId": "6159041110",
+          "brand": "Continental",
+          "type": "HS3",
+          "size": "315/60 R22.5",
+          "dot": "04/2025",
+          "km": 36358,
+          "kmOnAssign": 36358
+        },
+        "position": "Predné ľavé",
+        "category": "front",
+        "id": "front-left"
+      },
+      {
+        "tire": {
+          "customId": "6159040829",
+          "kmOnAssign": 36358,
+          "id": "0xaHRSTvxH0BVOty6A3y",
+          "type": "HS3",
+          "brand": "Continental",
+          "dot": "03/2025",
+          "km": 36358,
+          "size": "315/60 R22.5"
+        },
+        "position": "Predné pravé",
+        "category": "front",
+        "id": "front-right"
+      },
+      {
+        "id": "rear-left-outer",
+        "category": "rear",
+        "tire": null,
+        "position": "Zadné ľavé vonkajšie"
+      },
+      {
+        "tire": null,
+        "position": "Zadné ľavé vnútorné",
+        "category": "rear",
+        "id": "rear-left-inner"
+      },
+      {
+        "category": "rear",
+        "id": "rear-right-outer",
+        "tire": null,
+        "position": "Zadné pravé vonkajšie"
+      },
+      {
+        "position": "Zadné pravé vnútorné",
+        "tire": null,
+        "id": "rear-right-inner",
+        "category": "rear"
+      }
+    ]
+  },
+  "ZC153BL": {
+    "slots": [
+      {
+        "category": "front",
+        "id": "front-left",
+        "tire": null,
+        "position": "Predné ľavé"
+      },
+      {
+        "category": "front",
+        "position": "Predné pravé",
+        "id": "front-right",
+        "tire": null
+      },
+      {
+        "position": "Zadné ľavé vonkajšie",
+        "tire": null,
+        "category": "rear",
+        "id": "rear-left-outer"
+      },
+      {
+        "category": "rear",
+        "id": "rear-left-inner",
+        "tire": null,
+        "position": "Zadné ľavé vnútorné"
+      },
+      {
+        "tire": null,
+        "id": "rear-right-outer",
+        "category": "rear",
+        "position": "Zadné pravé vonkajšie"
+      },
+      {
+        "id": "rear-right-inner",
+        "category": "rear",
+        "tire": null,
+        "position": "Zadné pravé vnútorné"
+      }
+    ]
+  },
+  "ZC352BP": {
+    "slots": [
+      {
+        "position": "Predné ľavé",
+        "tire": null,
+        "category": "front",
+        "id": "front-left"
+      },
+      {
+        "position": "Predné pravé",
+        "tire": null,
+        "id": "front-right",
+        "category": "front"
+      },
+      {
+        "tire": {
+          "brand": "Prometeon",
+          "size": "295/60 R22.5",
+          "kmOnAssign": 656235,
+          "dot": "09/2025",
+          "km": 0,
+          "customId": "JMC2205A",
+          "id": "TIb2f25YzJP1GIn3PFMK",
+          "type": "R02"
+        },
+        "id": "rear-left-outer",
+        "category": "rear",
+        "position": "Zadné ľavé vonkajšie"
+      },
+      {
+        "position": "Zadné ľavé vnútorné",
+        "id": "rear-left-inner",
+        "tire": {
+          "id": "JYMbtW4tEhD6xPxKOxG9",
+          "customId": "JMC84208",
+          "type": "R02",
+          "dot": "09/2025",
+          "size": "295/60 R22.5",
+          "km": 0,
+          "brand": "Prometeon",
+          "kmOnAssign": 656235
+        },
+        "category": "rear"
+      },
+      {
+        "tire": {
+          "brand": "Prometeon",
+          "size": "295/60 R22.5",
+          "customId": "JMC90192",
+          "dot": "09/2025",
+          "kmOnAssign": 661667,
+          "type": "R02",
+          "id": "bag2xTM61ohhCpDRfGl4",
+          "km": 5432
+        },
+        "category": "rear",
+        "position": "Zadné pravé vonkajšie",
+        "id": "rear-right-outer"
+      },
+      {
+        "tire": {
+          "size": "295/60 R22.5",
+          "dot": "09/2025",
+          "type": "R02",
+          "kmOnAssign": 656235,
+          "brand": "Prometeon",
+          "km": 0,
+          "id": "AZ576Sp32iYvcILXNg7W",
+          "customId": "JMC2237A"
+        },
+        "position": "Zadné pravé vnútorné",
+        "id": "rear-right-inner",
+        "category": "rear"
+      }
+    ]
+  },
+  "ZC441BV": {
+    "slots": [
+      {
+        "id": "front-left",
+        "position": "Predné ľavé",
+        "category": "front",
+        "tire": null
+      },
+      {
+        "id": "front-right",
+        "position": "Predné pravé",
+        "category": "front",
+        "tire": null
+      },
+      {
+        "id": "rear-left-outer",
+        "position": "Zadné ľavé vonkajšie",
+        "category": "rear",
+        "tire": {
+          "id": "3TBeewuIm9YMndNYbvAP",
+          "customId": "JMC90291",
+          "brand": "Prometeon",
+          "type": "R02",
+          "size": "295/60 R22.5",
+          "dot": "09/2025",
+          "km": 0,
+          "kmOnAssign": 391281
+        }
+      },
+      {
+        "id": "rear-left-inner",
+        "position": "Zadné ľavé vnútorné",
+        "category": "rear",
+        "tire": {
+          "id": "QsdkRysqusR9YEvw8qFP",
+          "customId": "JMC84382",
+          "brand": "Prometeon",
+          "type": "R02",
+          "size": "295/60 R22.5",
+          "dot": "09/2025",
+          "km": 0,
+          "kmOnAssign": 391281
+        }
+      },
+      {
+        "id": "rear-right-outer",
+        "position": "Zadné pravé vonkajšie",
+        "category": "rear",
+        "tire": {
+          "id": "ofQtJotB5YDmaiqZ0DEQ",
+          "customId": "JMS72226",
+          "brand": "Prometeon",
+          "type": "R02",
+          "size": "295/60 R22.5",
+          "dot": "10/2025",
+          "km": 0,
+          "kmOnAssign": 391281
+        }
+      },
+      {
+        "id": "rear-right-inner",
+        "position": "Zadné pravé vnútorné",
+        "category": "rear",
+        "tire": {
+          "id": "ivo2K3VGWhgN22aeIbnx",
+          "customId": "JMC2244A",
+          "brand": "Prometeon",
+          "type": "R02",
+          "size": "295/60 R22.5",
+          "dot": "09/2025",
+          "km": 0,
+          "kmOnAssign": 391281
+        }
+      }
+    ]
+  },
+  "ZC449BV": {
+    "slots": [
+      {
+        "id": "front-left",
+        "position": "Predné ľavé",
+        "category": "front",
+        "tire": null
+      },
+      {
+        "id": "front-right",
+        "position": "Predné pravé",
+        "category": "front",
+        "tire": null
+      },
+      {
+        "id": "rear-left-outer",
+        "position": "Zadné ľavé vonkajšie",
+        "category": "rear",
+        "tire": {
+          "id": "WLVE47R5T6lrZ9qitkzD",
+          "customId": "E7W371013",
+          "brand": "Firestone",
+          "type": "Fd624",
+          "size": "295/60 R22.5",
+          "dot": "09/2024",
+          "km": 0,
+          "kmOnAssign": 378951
+        }
+      },
+      {
+        "id": "rear-left-inner",
+        "position": "Zadné ľavé vnútorné",
+        "category": "rear",
+        "tire": {
+          "id": "OmQEjG3qiLviGwAdfu9Q",
+          "customId": "E7W352814",
+          "brand": "Firestone",
+          "type": "Fd624",
+          "size": "295/60 R22.5",
+          "dot": "09/2024",
+          "km": 0,
+          "kmOnAssign": 378951
+        }
+      },
+      {
+        "id": "rear-right-outer",
+        "position": "Zadné pravé vonkajšie",
+        "category": "rear",
+        "tire": {
+          "id": "QYGwLK4fSMKPoe9n2wn5",
+          "customId": "E7374143",
+          "brand": "Firestone",
+          "type": "Fd624",
+          "size": "295/60 R22.5",
+          "dot": "09/2024",
+          "km": 0,
+          "kmOnAssign": 378951
+        }
+      },
+      {
+        "id": "rear-right-inner",
+        "position": "Zadné pravé vnútorné",
+        "category": "rear",
+        "tire": {
+          "id": "Gz2O39Uu3druHcJg0of9",
+          "customId": "E7W352689",
+          "brand": "Firestone",
+          "type": "Fd624",
+          "size": "295/60 R22.5",
+          "dot": "09/2024",
+          "km": 0,
+          "kmOnAssign": 378951
+        }
+      }
+    ]
+  },
+  "ZC465BS": {
+    "slots": [
+      {
+        "position": "Predné ľavé",
+        "category": "front",
+        "tire": null,
+        "id": "front-left"
+      },
+      {
+        "tire": null,
+        "position": "Predné pravé",
+        "id": "front-right",
+        "category": "front"
+      },
+      {
+        "position": "Zadné ľavé vonkajšie",
+        "category": "rear",
+        "id": "rear-left-outer",
+        "tire": {
+          "id": "pxU0FXw7XVVPgYIBTW0U",
+          "customId": "HLD80681R",
+          "brand": "BFGoodreech",
+          "type": "Route Control",
+          "size": "295/60 R22.5",
+          "dot": "03/2025",
+          "km": 0,
+          "kmOnAssign": 280053
+        }
+      },
+      {
+        "tire": {
+          "id": "QPWB7nnXwt4O2lihp7lK",
+          "customId": "HLD80707R",
+          "brand": "BFGoodreech",
+          "type": "Route Control",
+          "size": "295/60 R22.5",
+          "dot": "03/2025",
+          "km": 0,
+          "kmOnAssign": 280053
+        },
+        "id": "rear-left-inner",
+        "position": "Zadné ľavé vnútorné",
+        "category": "rear"
+      },
+      {
+        "id": "rear-right-outer",
+        "tire": {
+          "brand": "BFGoodreech",
+          "size": "295/60 R22.5",
+          "km": 0,
+          "dot": "03/2025",
+          "kmOnAssign": 280053,
+          "id": "XchUJj1ngM80gn0jWlTe",
+          "type": "Route Control",
+          "customId": "HLD80636R"
+        },
+        "category": "rear",
+        "position": "Zadné pravé vonkajšie"
+      },
+      {
+        "tire": {
+          "customId": "HLD80685R",
+          "id": "J5buwVA9TblhjpxMa1H9",
+          "type": "Route Control",
+          "km": 0,
+          "kmOnAssign": 280053,
+          "dot": "03/2025",
+          "brand": "BFGoodreech",
+          "size": "295/60 R22.5"
+        },
+        "category": "rear",
+        "position": "Zadné pravé vnútorné",
+        "id": "rear-right-inner"
+      }
+    ]
+  },
+  "ZC469BS": {
+    "slots": [
+      {
+        "position": "Predné ľavé",
+        "tire": {
+          "id": "ZWTo0lHNiQ7qbL9b5fJZ",
+          "customId": "KUE02145",
+          "brand": "Hankook",
+          "type": "AH31",
+          "size": "355/50 R22.5",
+          "dot": "08/2020",
+          "km": 20000,
+          "kmOnAssign": 245102
+        },
+        "category": "front",
+        "id": "front-left"
+      },
+      {
+        "id": "front-right",
+        "position": "Predné pravé",
+        "category": "front",
+        "tire": {
+          "id": "SIkzVKAlmycz2DxaOUD0",
+          "customId": "KUD04146",
+          "brand": "Hankook",
+          "type": "AH31",
+          "size": "355/50 R22.5",
+          "dot": "08/2020",
+          "km": 20000,
+          "kmOnAssign": 245102
+        }
+      },
+      {
+        "category": "rear",
+        "tire": null,
+        "position": "Zadné ľavé vonkajšie",
+        "id": "rear-left-outer"
+      },
+      {
+        "position": "Zadné ľavé vnútorné",
+        "id": "rear-left-inner",
+        "tire": null,
+        "category": "rear"
+      },
+      {
+        "id": "rear-right-outer",
+        "position": "Zadné pravé vonkajšie",
+        "tire": null,
+        "category": "rear"
+      },
+      {
+        "id": "rear-right-inner",
+        "position": "Zadné pravé vnútorné",
+        "category": "rear",
+        "tire": null
+      }
+    ]
+  },
+  "ZC491BS": {
+    "slots": [
+      {
+        "id": "front-left",
+        "position": "Predné ľavé",
+        "category": "front",
+        "tire": null
+      },
+      {
+        "id": "front-right",
+        "position": "Predné pravé",
+        "category": "front",
+        "tire": null
+      },
+      {
+        "id": "rear-left-outer",
+        "position": "Zadné ľavé vonkajšie",
+        "category": "rear",
+        "tire": {
+          "id": "4aUihou0OuCPhSgDJuXb",
+          "customId": "LSH04425",
+          "brand": "HANKOOK",
+          "type": "DH31",
+          "size": "315/70 R22.5",
+          "dot": "09/2020",
+          "km": 0,
+          "kmOnAssign": 783213
+        }
+      },
+      {
+        "id": "rear-left-inner",
+        "position": "Zadné ľavé vnútorné",
+        "category": "rear",
+        "tire": {
+          "id": "ztr6nNX1kdXiTNBQ3Y4A",
+          "customId": "LSH04375",
+          "brand": "HANKOOK",
+          "type": "DH31",
+          "size": "315/70 R22.5",
+          "dot": "09/2020",
+          "km": 0,
+          "kmOnAssign": 783213
+        }
+      },
+      {
+        "id": "rear-right-outer",
+        "position": "Zadné pravé vonkajšie",
+        "category": "rear",
+        "tire": {
+          "id": "BYDODbgHP0rLP2UV2xok",
+          "customId": "LSK04604",
+          "brand": "HANKOOK",
+          "type": "DH31",
+          "size": "315/70 R22.5",
+          "dot": "09/2020",
+          "km": 0,
+          "kmOnAssign": 783213
+        }
+      },
+      {
+        "id": "rear-right-inner",
+        "position": "Zadné pravé vnútorné",
+        "category": "rear",
+        "tire": {
+          "id": "m9LWVUQ5AzqhiZkigzP6",
+          "customId": "LSB06221",
+          "brand": "HANKOOK",
+          "type": "DH31",
+          "size": "315/70 R22.5",
+          "dot": "09/2020",
+          "km": 0,
+          "kmOnAssign": 783213
+        }
+      }
+    ]
+  },
+  "ZC675BT": {
+    "slots": [
+      {
+        "position": "Predné ľavé",
+        "tire": null,
+        "id": "front-left",
+        "category": "front"
+      },
+      {
+        "position": "Predné pravé",
+        "tire": null,
+        "category": "front",
+        "id": "front-right"
+      },
+      {
+        "position": "Zadné ľavé vonkajšie",
+        "category": "rear",
+        "id": "rear-left-outer",
+        "tire": {
+          "id": "sCma31nni6dXmVnQCdGg",
+          "customId": "E7P426900",
+          "brand": "Brigestone",
+          "type": "Duravis",
+          "size": "315/70 R22.5",
+          "dot": "09/2019",
+          "km": 0,
+          "kmOnAssign": 551069
+        }
+      },
+      {
+        "position": "Zadné ľavé vnútorné",
+        "id": "rear-left-inner",
+        "category": "rear",
+        "tire": {
+          "id": "INdn35I0PJi9rij4mYcm",
+          "customId": "E7P426694",
+          "brand": "Brigestone",
+          "type": "Duravis",
+          "size": "315/70 R22.5",
+          "dot": "09/2019",
+          "km": 0,
+          "kmOnAssign": 551069
+        }
+      },
+      {
+        "tire": {
+          "km": 0,
+          "id": "aFyy5WAnavcRzAFuH78u",
+          "customId": "E7P426708",
+          "size": "315/70 R22.5",
+          "type": "Duravis",
+          "kmOnAssign": 551069,
+          "dot": "09/2019",
+          "brand": "Brigestone"
+        },
+        "position": "Zadné pravé vonkajšie",
+        "category": "rear",
+        "id": "rear-right-outer"
+      },
+      {
+        "position": "Zadné pravé vnútorné",
+        "id": "rear-right-inner",
+        "tire": {
+          "type": "Duravis",
+          "customId": "E7P478814",
+          "id": "CYbMxe0NMtybCDFGCxc5",
+          "kmOnAssign": 551069,
+          "size": "315/70 R22.5",
+          "brand": "Brigestone",
+          "dot": "09/2019",
+          "km": 0
+        },
+        "category": "rear"
+      }
+    ]
+  },
+  "ZC750BO": {
+    "slots": [
+      {
+        "id": "front-left",
+        "position": "Predné ľavé",
+        "category": "front",
+        "tire": null
+      },
+      {
+        "id": "front-right",
+        "position": "Predné pravé",
+        "category": "front",
+        "tire": null
+      },
+      {
+        "id": "rear-left-outer",
+        "position": "Zadné ľavé vonkajšie",
+        "category": "rear",
+        "tire": {
+          "id": "MMgbisUDq27T0lT79vXu",
+          "customId": "JMC5667A",
+          "brand": "Prometeon",
+          "type": "R02",
+          "size": "315/70 R22.5",
+          "dot": "09/2025",
+          "km": 0,
+          "kmOnAssign": 749799
+        }
+      },
+      {
+        "id": "rear-left-inner",
+        "position": "Zadné ľavé vnútorné",
+        "category": "rear",
+        "tire": {
+          "id": "VolDRzf3DVj8b3WjZpdr",
+          "customId": "JMC9455C",
+          "brand": "Prometeon",
+          "type": "R02",
+          "size": "315/70 R22.5",
+          "dot": "09/2025",
+          "km": 0,
+          "kmOnAssign": 749799
+        }
+      },
+      {
+        "id": "rear-right-outer",
+        "position": "Zadné pravé vonkajšie",
+        "category": "rear",
+        "tire": {
+          "id": "hG39KLWa3fsib8NSAH3r",
+          "customId": "JMC9331C",
+          "brand": "Prometeon",
+          "type": "R02",
+          "size": "315/70 R22.5",
+          "dot": "09/2025",
+          "km": 0,
+          "kmOnAssign": 749799
+        }
+      },
+      {
+        "id": "rear-right-inner",
+        "position": "Zadné pravé vnútorné",
+        "category": "rear",
+        "tire": {
+          "id": "EigSPaLdnR3tCtkHnOcS",
+          "customId": "JMC95888",
+          "brand": "Prometeon",
+          "type": "R02",
+          "size": "315/70 R22.5",
+          "dot": "09/2025",
+          "km": 0,
+          "kmOnAssign": 749799
+        }
+      }
+    ]
+  },
+  "ZC773BS": {
+    "slots": [
+      {
+        "category": "front",
+        "tire": null,
+        "position": "Predné ľavé",
+        "id": "front-left"
+      },
+      {
+        "position": "Predné pravé",
+        "id": "front-right",
+        "category": "front",
+        "tire": null
+      },
+      {
+        "position": "Zadné ľavé vonkajšie",
+        "category": "rear",
+        "id": "rear-left-outer",
+        "tire": {
+          "size": "295/60 R22.5",
+          "customId": "JMS78766",
+          "dot": "10/2025",
+          "type": "R02",
+          "brand": "Prometeon",
+          "km": 0,
+          "kmOnAssign": 521039,
+          "id": "HJjL7rPwxbM991Geffkp"
+        }
+      },
+      {
+        "tire": {
+          "id": "827H7N7bpbpFe9GPsDuZ",
+          "customId": "JMS79443",
+          "brand": "Prometeon",
+          "type": "R02",
+          "size": "295/60 R22.5",
+          "dot": "10/2025",
+          "km": 0,
+          "kmOnAssign": 521039
+        },
+        "category": "rear",
+        "position": "Zadné ľavé vnútorné",
+        "id": "rear-left-inner"
+      },
+      {
+        "tire": {
+          "id": "WD0ockD3TmKHj21ebkVP",
+          "customId": "JMS79496",
+          "brand": "Prometeon",
+          "type": "R02",
+          "size": "295/60 R22.5",
+          "dot": "10/2025",
+          "km": 0,
+          "kmOnAssign": 521039
+        },
+        "id": "rear-right-outer",
+        "category": "rear",
+        "position": "Zadné pravé vonkajšie"
+      },
+      {
+        "category": "rear",
+        "tire": {
+          "id": "EwueWjrJpEIOanfRnQiY",
+          "customId": "JMS79401",
+          "brand": "Prometeon",
+          "type": "R02",
+          "size": "295/60 R22.5",
+          "dot": "10/2025",
+          "km": 0,
+          "kmOnAssign": 521039
+        },
+        "id": "rear-right-inner",
+        "position": "Zadné pravé vnútorné"
+      }
+    ]
+  }
+}
