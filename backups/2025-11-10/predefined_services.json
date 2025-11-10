@@ -1,0 +1,301 @@
+{
+  "2sLTxENwkhY4XxTPn6T4": {
+    "name": "Karta VISA",
+    "specificDate": "2025-09-22",
+    "type": "date",
+    "reminderDays": 30,
+    "createdAt": {
+      "_seconds": 1758528199,
+      "_nanoseconds": 544000000
+    }
+  },
+  "43Xf2L4kq2jgLNJsUiCF": {
+    "reminderKm": 15000,
+    "createdAt": {
+      "_seconds": 1758528028,
+      "_nanoseconds": 131000000
+    },
+    "type": "km",
+    "name": "Výmena DPF filtra",
+    "interval": 240000
+  },
+  "4THTrFR0r1ZOaucADuL4": {
+    "type": "date",
+    "createdAt": {
+      "_seconds": 1758528075,
+      "_nanoseconds": 473000000
+    },
+    "reminderDays": 30,
+    "interval": 1,
+    "timeUnit": "years",
+    "servicePolozky": [
+      "Kabínový: CU 32 011/1, AF 56110",
+      "ADblue: UF106",
+      "Vysúšač: HALDEX 031005509, P956986",
+      "Premazanie náprav",
+      "Kontrola tlmičov",
+      "Vynulovanie palubného počítaču"
+    ],
+    "name": "Ročná kontrola tahač"
+  },
+  "7GGR9OdkNUzEU3vWaaie": {
+    "name": "Kontrola/Nastavenie ventilov",
+    "reminderKm": 15000,
+    "interval": 360000,
+    "type": "km",
+    "createdAt": {
+      "_seconds": 1758528178,
+      "_nanoseconds": 384000000
+    }
+  },
+  "7XY8wSMUjpj2LmLezrap": {
+    "type": "date",
+    "specificDate": "2025-09-22",
+    "name": "Poistenie - zelená karta",
+    "reminderDays": 30,
+    "createdAt": {
+      "_seconds": 1758528400,
+      "_nanoseconds": 359000000
+    }
+  },
+  "AhXBtL1cyd2UOdjyvvFY": {
+    "interval": 90,
+    "name": "Stiahnutie tachografu",
+    "createdAt": {
+      "_seconds": 1758527787,
+      "_nanoseconds": 362000000
+    },
+    "timeUnit": "days",
+    "type": "date",
+    "reminderDays": 30
+  },
+  "EUWMdCLMIcQvDnN5IxmS": {
+    "reminderDays": 30,
+    "timeUnit": "years",
+    "createdAt": {
+      "_seconds": 1758528059,
+      "_nanoseconds": 889000000
+    },
+    "type": "date",
+    "interval": 1,
+    "name": "Ročná kontrola náves",
+    "servicePolozky": [
+      "Kontrola tlmičov",
+      "Kontrola uniku vzduchu",
+      "Premazanie stĺpikov",
+      "Premazanie rezervy kolesa",
+      "Dotiahnutie podlahy"
+    ]
+  },
+  "EmBYNftKdarWvBeDcZbZ": {
+    "interval": 200000,
+    "name": "Výmena oleja v diferenciáli",
+    "type": "km",
+    "createdAt": {
+      "_seconds": 1758527895,
+      "_nanoseconds": 236000000
+    },
+    "reminderKm": 15000,
+    "servicePolozky": [
+      "Olej: TRAXIUM DUAL 9 FE 75w90 (8-14L)"
+    ]
+  },
+  "F6xHQKfxYtPcBTNCj7xu": {
+    "reminderKm": 15000,
+    "createdAt": {
+      "_seconds": 1758527865,
+      "_nanoseconds": 65000000
+    },
+    "type": "km",
+    "name": "Výmena oleja v prevodovke",
+    "interval": 200000,
+    "servicePolozky": [
+      "Olej: TRAXIUM GEAR 9 FE 75w90 (12L)"
+    ]
+  },
+  "GDp8kf12cOiK6mm5ZOPO": {
+    "reminderDays": 30,
+    "createdAt": {
+      "_seconds": 1758527735,
+      "_nanoseconds": 59000000
+    },
+    "timeUnit": "years",
+    "interval": 1,
+    "name": "Emisná kontrola (EK)",
+    "type": "date"
+  },
+  "GW9hHVXSujlKPIZrWnYs": {
+    "name": "Eurolicencia (modrá karta)",
+    "specificDate": "2025-09-22",
+    "createdAt": {
+      "_seconds": 1758528300,
+      "_nanoseconds": 576000000
+    },
+    "type": "date",
+    "reminderDays": 60
+  },
+  "IVvgsf1IvLZM4BWRXhR3": {
+    "reminderDays": 30,
+    "createdAt": {
+      "_seconds": 1758528369,
+      "_nanoseconds": 119000000
+    },
+    "type": "date",
+    "specificDate": "2025-09-22",
+    "name": "L - Certifikát"
+  },
+  "Jj0xTsxbrAI09Ob8I1EL": {
+    "interval": 1,
+    "timeUnit": "years",
+    "type": "date",
+    "reminderDays": 30,
+    "name": "Technická kontrola (STK)",
+    "createdAt": {
+      "_seconds": 1758527712,
+      "_nanoseconds": 923000000
+    }
+  },
+  "NEMlqEyTpIg5rHGTWjqf": {
+    "name": "Kontrola brźd",
+    "timeUnit": "years",
+    "type": "date",
+    "interval": 1,
+    "createdAt": {
+      "_seconds": 1758528093,
+      "_nanoseconds": 33000000
+    },
+    "reminderDays": 30,
+    "servicePolozky": [
+      "Oklepanie brzdových kotúčov",
+      "Výmena brzdových kotúčov",
+      "Výmena brzdových platničiek",
+      "Sfučanie strmena"
+    ]
+  },
+  "NbX3nsV9NZbAb4cF4je8": {
+    "name": "Výmena chladiacej zmesi",
+    "createdAt": {
+      "_seconds": 1758527956,
+      "_nanoseconds": 74000000
+    },
+    "reminderKm": 15000,
+    "type": "km",
+    "servicePolozky": [
+      "Zmes: G12++"
+    ],
+    "interval": 200000
+  },
+  "X9vOClkkdAfjMjBuEvrJ": {
+    "specificDate": "2025-09-22",
+    "name": "Karta AS24",
+    "type": "date",
+    "reminderDays": 30,
+    "createdAt": {
+      "_seconds": 1758528226,
+      "_nanoseconds": 800000000
+    }
+  },
+  "arTH677KCUQpcBMf2pLw": {
+    "createdAt": {
+      "_seconds": 1758527824,
+      "_nanoseconds": 418000000
+    },
+    "reminderKm": 15000,
+    "type": "km",
+    "interval": 100000,
+    "name": "Výmena oleja v motorove"
+  },
+  "benUjvaUbJGsX658f0Vl": {
+    "reminderDays": 30,
+    "name": "Kontrola hasiacich prístrojov",
+    "type": "date",
+    "interval": 1,
+    "createdAt": {
+      "_seconds": 1758528143,
+      "_nanoseconds": 576000000
+    },
+    "timeUnit": "years"
+  },
+  "bilauCZblDLMqO5zRHxn": {
+    "interval": 3,
+    "createdAt": {
+      "_seconds": 1758528114,
+      "_nanoseconds": 722000000
+    },
+    "reminderDays": 30,
+    "name": "Nastavenie geometrie",
+    "timeUnit": "years",
+    "type": "date"
+  },
+  "cp0CNqenfgdeQMsvcDu8": {
+    "reminderDays": 30,
+    "name": "Karta Eurowag",
+    "specificDate": "2025-09-22",
+    "type": "date",
+    "createdAt": {
+      "_seconds": 1758528215,
+      "_nanoseconds": 778000000
+    }
+  },
+  "jljMVfBsG1AtiVTzfnyA": {
+    "timeUnit": "years",
+    "createdAt": {
+      "_seconds": 1758527769,
+      "_nanoseconds": 410000000
+    },
+    "name": "Ciachovanie tachografu",
+    "reminderDays": 30,
+    "type": "date",
+    "interval": 2
+  },
+  "kvr8ZGRMZdFoM02g8gyc": {
+    "reminderDays": 30,
+    "type": "date",
+    "createdAt": {
+      "_seconds": 1758528240,
+      "_nanoseconds": 82000000
+    },
+    "specificDate": "2025-09-15",
+    "name": "Karta Benzina"
+  },
+  "mdSx3HFSkE445M9xq6SO": {
+    "name": "Koncesná listina",
+    "createdAt": {
+      "_seconds": 1758528272,
+      "_nanoseconds": 656000000
+    },
+    "specificDate": "2025-09-22",
+    "type": "date",
+    "reminderDays": 60
+  },
+  "tFnZci28YXFjchLezzMJ": {
+    "reminderKm": 15000,
+    "name": "Kontrola chladiacej zmesi",
+    "type": "km",
+    "createdAt": {
+      "_seconds": 1758527976,
+      "_nanoseconds": 465000000
+    },
+    "interval": 100000
+  },
+  "tokPCT64w9y11SDhLZw3": {
+    "reminderKm": 15000,
+    "createdAt": {
+      "_seconds": 1758865132,
+      "_nanoseconds": 631000000
+    },
+    "name": "Výmena trisiek",
+    "type": "km",
+    "interval": 600000
+  },
+  "xPMCDAaFW3xcvdsMP8Rh": {
+    "reminderKm": 15000,
+    "createdAt": {
+      "_seconds": 1758527996,
+      "_nanoseconds": 641000000
+    },
+    "name": "Výmena spojky",
+    "interval": 600000,
+    "type": "km"
+  }
+}
