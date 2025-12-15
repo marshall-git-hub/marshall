@@ -1,0 +1,380 @@
+{
+  "AA450VN": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 69373
+  },
+  "AA459VN": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 201000
+  },
+  "AA466SN": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 79265
+  },
+  "AA732GJ": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 74617
+  },
+  "EL449AR": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 0
+  },
+  "VZV": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 0
+  },
+  "VZV2": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 0
+  },
+  "ZC153BL": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 866593
+  },
+  "ZC206YD": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 20660
+  },
+  "ZC212YC": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 267151
+  },
+  "ZC235YC": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 1463009
+  },
+  "ZC237YC": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 1307182
+  },
+  "ZC241BP": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 177857
+  },
+  "ZC278YC": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 212304
+  },
+  "ZC291YD": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 553818
+  },
+  "ZC298YC": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 66504
+  },
+  "ZC324BL": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 303328
+  },
+  "ZC328BL": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 792819
+  },
+  "ZC336YD": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 533495
+  },
+  "ZC352BP": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 673795
+  },
+  "ZC375YC": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 1343852
+  },
+  "ZC383BL": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 869777
+  },
+  "ZC388BS": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 0
+  },
+  "ZC388YC": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 1299611
+  },
+  "ZC390YC": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 242941
+  },
+  "ZC397YD": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 415285
+  },
+  "ZC398YC": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 1250017
+  },
+  "ZC421YD": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 400331
+  },
+  "ZC426YD": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 277028
+  },
+  "ZC441BV": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 407709
+  },
+  "ZC441YD": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 448755
+  },
+  "ZC449BV": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 404297
+  },
+  "ZC451YD": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 445038
+  },
+  "ZC460YC": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 1192351
+  },
+  "ZC465BS": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 298615
+  },
+  "ZC469BS": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 291294
+  },
+  "ZC491BS": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 803315
+  },
+  "ZC594BN": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 34645
+  },
+  "ZC595YB": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 31885
+  },
+  "ZC598YD": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 263589
+  },
+  "ZC603YD": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 304999
+  },
+  "ZC645YB": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 6220
+  },
+  "ZC675BT": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 574225
+  },
+  "ZC685BP": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 113406
+  },
+  "ZC750BO": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 770490
+  },
+  "ZC773BS": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 535905
+  },
+  "ZC859BR": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 175750
+  },
+  "ZC889BS": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 420445
+  },
+  "ZC970BP": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 846235
+  },
+  "ZC974BP": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 878289
+  },
+  "ZCZ086": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 0
+  },
+  "ZH667CP": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 287044
+  },
+  "kompresor": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 824891000
+    },
+    "kilometers": 0
+  },
+  "zeriav": {
+    "timestamp": {
+      "_seconds": 1765179292,
+      "_nanoseconds": 831955000
+    },
+    "kilometers": 0
+  }
+}
