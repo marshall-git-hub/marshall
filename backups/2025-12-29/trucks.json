@@ -1,0 +1,103 @@
+{
+  "AA466SN": {
+    "licensePlate": "AA 466 SN",
+    "totalTires": 6,
+    "status": "good",
+    "tiresAssigned": 6
+  },
+  "AA732GJ": {
+    "licensePlate": "AA 732 GJ",
+    "totalTires": 6,
+    "status": "good",
+    "tiresAssigned": 0
+  },
+  "ZC153BL": {
+    "licensePlate": "ZC 153 BL",
+    "totalTires": 6,
+    "status": "good",
+    "tiresAssigned": 0
+  },
+  "ZC328BL": {
+    "licensePlate": "ZC 328 BL",
+    "totalTires": 6,
+    "status": "good",
+    "tiresAssigned": 0
+  },
+  "ZC352BP": {
+    "licensePlate": "ZC 352 BP",
+    "tiresAssigned": 0,
+    "status": "good",
+    "totalTires": 0
+  },
+  "ZC383BL": {
+    "licensePlate": "ZC 383 BL",
+    "status": "good",
+    "tiresAssigned": 0
+  },
+  "ZC441BV": {
+    "licensePlate": "ZC 441 BV",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC449BV": {
+    "licensePlate": "ZC 449 BV",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC465BS": {
+    "licensePlate": "ZC 465 BS",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC469BS": {
+    "licensePlate": "ZC 469 BS",
+    "totalTires": 6,
+    "status": "good",
+    "tiresAssigned": 2
+  },
+  "ZC491BS": {
+    "licensePlate": "ZC 491 BS",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC675BT": {
+    "licensePlate": "ZC 675 BT",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC750BO": {
+    "licensePlate": "ZC 750 BO",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC773BS": {
+    "licensePlate": "ZC 773 BS",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC889BS": {
+    "licensePlate": "ZC 889 BS",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC970BP": {
+    "licensePlate": "ZC 970 BP",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  },
+  "ZC974BP": {
+    "licensePlate": "ZC 974 BP",
+    "tiresAssigned": 0,
+    "totalTires": 6,
+    "status": "good"
+  }
+}
